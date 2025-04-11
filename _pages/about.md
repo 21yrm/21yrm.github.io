@@ -55,4 +55,6 @@ My research interest includes neural machine translation and computer vision. I 
 - *2021.09 - 2025.06*, Bachelor of Engineering, School of Software, Tsinghua University, Beijing, China. 
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2024.12 - 2025.06*, Research Assistant at the School of Software, Tsinghua University, supervised by [Prof. Yu-Shen Liu](https://yushen-liu.github.io/).
+- *2024.07 - 2025.02*, Research Assistant at SAIR Lab, University at Buffalo, supervised by [Prof. Chen Wang](https://sairlab.org/chenw/).
+- *2024.03 - 2024.08*, Research Assistant at the Institute for Interdisciplinary Information Sciences, Tsinghua University, supervised by [Prof. Yi Wu](https://jxwuyi.weebly.com/).
