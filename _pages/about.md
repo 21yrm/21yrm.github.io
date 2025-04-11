@@ -17,6 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
+# 🙋‍♂️ About Me
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
 
 My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
@@ -58,3 +59,13 @@ My research interest includes neural machine translation and computer vision. I 
 - *2024.12 - 2025.06*, Research Assistant at the School of Software, Tsinghua University, supervised by [Prof. Yu-Shen Liu](https://yushen-liu.github.io/).
 - *2024.07 - 2025.02*, Research Assistant at SAIR Lab, University at Buffalo, supervised by [Prof. Chen Wang](https://sairlab.org/chenw/).
 - *2024.03 - 2024.08*, Research Assistant at the Institute for Interdisciplinary Information Sciences, Tsinghua University, supervised by [Prof. Yi Wu](https://jxwuyi.weebly.com/).
+
+# 🗂️ Misc
+## 🏎️ Formula 1
+I have a deep passion for Formula 1—not only because of the sleek and futuristic design of the race cars, but also because of the pure thrill that high-speed racing brings me.
+- My favorite driver is **Max Verstappen**, the phenomenal Dutch racer. His intense focus and total dedication to racing are truly inspiring—his mind is fully immersed in the sport. What resonates with me most is his **tenacious and fiercely competitive driving style**. Especially in the 2025 season, even with Red Bull’s car being less dominant, Max continues to push the limits, consistently breaking lap records through his **unparalleled driving skills**.
+- I’m also a proud member of the **Tsinghua Racing Association**, a student club dedicated to motorsports. I enjoy the club’s various activities, such as **watching the Chinese Grand Prix live together** and **going go-karting** with fellow enthusiasts. It’s a great way to connect with like-minded people and stay close to the racing world.
+
+## 🐾 Pets
+I genuinely love all kinds of pets—cats, dogs, birds, fish—you name it. But cats have always been my number one favorite.
+Unfortunately, I haven’t had the chance to own one yet, but I truly hope my dream of having a cat will come true once I’m in the U.S.!
