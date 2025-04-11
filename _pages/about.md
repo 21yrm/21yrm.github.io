@@ -67,5 +67,4 @@ I have a deep passion for Formula 1—not only because of the sleek and futurist
 - I’m also a proud member of the **Tsinghua Racing Association**, a student club dedicated to motorsports. I enjoy the club’s various activities, such as **watching the Chinese Grand Prix live together** and **going go-karting** with fellow enthusiasts. It’s a great way to connect with like-minded people and stay close to the racing world.
 
 ## 🐾 Pets
-I genuinely love all kinds of pets—cats, dogs, birds, fish—you name it. But cats have always been my number one favorite.
-Unfortunately, I haven’t had the chance to own one yet, but I truly hope my dream of having a cat will come true once I’m in the U.S.!
+I genuinely love all kinds of pets—cats, dogs, birds, fish—you name it. But **cats** have always been my number one favorite. Unfortunately, I haven’t had the chance to own one yet, but I truly hope my dream of having a cat will come true once I’m in the U.S.!
