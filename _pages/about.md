@@ -26,7 +26,7 @@ redirect_from:
 <span class='anchor' id='-publications'></span>
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/AirRoom.png' alt="sym" width="300px"></div></div>
 <div class='paper-box-text' markdown="1">
 
 AirRoom: Objects Matter in Room Reidentification
@@ -35,11 +35,11 @@ AirRoom: Objects Matter in Room Reidentification
 
 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
 
-\[[**arXiv**](https://www.arxiv.org/abs/2503.01130)\] \[[**Code**](https://www.arxiv.org/abs/2503.01130)\] \[[**Project Page**](https://www.arxiv.org/abs/2503.01130)\]
-</div>
-</div>
+\[[**arXiv**](https://www.arxiv.org/abs/2503.01130)\] \[[**Code**](https://github.com/21yrm/AirRoom)\] \[[**Project Page**](https://sairlab.org/airroom/)\]
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+In this paper, we introduce AirRoom, an object-aware room ReID pipeline with two novel modules: the Receptive Field Expander and Object-Aware Scoring, which effectively leverage multi-level object-oriented information to overcome viewpoint variations.
+</div>
+</div>
 
 <span class='anchor' id='-honors-and-awards'></span>
 # 🏅 Honors and Awards
