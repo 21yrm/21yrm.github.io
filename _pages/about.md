@@ -57,6 +57,7 @@ redirect_from:
 - *2024.07 - 2025.02*, Research Assistant at SAIR Lab, University at Buffalo, supervised by [Prof. Chen Wang](https://sairlab.org/chenw/).
 - *2024.03 - 2024.08*, Research Assistant at the Institute for Interdisciplinary Information Sciences, Tsinghua University, supervised by [Prof. Yi Wu](https://jxwuyi.weebly.com/).
 
+<span class='anchor' id='-misc'></span>
 # 🗂️ Misc
 ## 🏎️ Formula 1
 I have a deep passion for Formula 1—not only because of the sleek and futuristic design of the race cars, but also because of the pure thrill that high-speed racing brings me.
