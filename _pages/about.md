@@ -16,7 +16,6 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-
 # 🙋‍♂️ About Me
 👋Hi there! I am an incoming Master's student in **Computer Vision (MSCV)** at the **Robotics Institute**, **Carnegie Mellon University**. Prior to this, I completed my **Bachelor of Engineering** at the **School of Software**, **Tsinghua University**. I am honored to have had the opportunity to collaborate with [Prof. Yu-Shen Liu](https://yushen-liu.github.io/), [Prof. Chen Wang](https://sairlab.org/chenw/), and [Prof. Yi Wu](https://jxwuyi.weebly.com/).
 
@@ -25,16 +24,22 @@ redirect_from:
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">CVPR 2025</div>
+      <img src='images/500x300.png' alt="sym" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+    AirRoom: Objects Matter in Room Reidentification
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+    **Runmao Yao**, Yi Du, Zhuoqun Chen, Haoze Zheng, Chen Wang
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+    IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
+    \[[**arXiv**](https://www.arxiv.org/abs/2503.01130)\] \[[**Code**](https://www.arxiv.org/abs/2503.01130)\] \  [[**Project   Page**](https://www.arxiv.org/abs/2503.01130)\]
+  </div>
 </div>
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
