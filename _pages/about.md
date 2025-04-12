@@ -41,6 +41,21 @@ In this paper, we introduce AirRoom, an object-aware room ReID pipeline with two
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><img src='images/SuperPC.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+SuperPC: A Single Diffusion Model for Point Cloud Completion, Upsampling, Denoising, and Colorization
+
+Yi Du, Zhipeng Zhao, Shaoshu Su, Sharath Golluri, Haoze Zheng, **Runmao Yao**, Chen Wang
+
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
+
+\[[**arXiv**](https://arxiv.org/abs/2503.14558)\] \[[**Code**]()\] \[[**Project Page**](https://sairlab.org/superpc/)\]
+
+In this paper, we propose SuperPC, a novel neural architecture that jointly solves inherent shortcomings in the raw point clouds, including noise, sparsity, incompleteness, and the absence of color.
+</div>
+</div>
+
 <span class='anchor' id='-honors-and-awards'></span>
 # 🏅 Honors and Awards
 - *2024.09* **Comprehensive Excellence Award**, Tsinghua University.
