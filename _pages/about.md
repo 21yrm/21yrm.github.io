@@ -87,6 +87,5 @@ I have a deep passion for Formula 1—not only because of the sleek and futurist
 ## 🐾 Pets
 I genuinely love all kinds of pets—cats, dogs, birds, fish—you name it. But **cats** have always been my number one favorite. Unfortunately, I haven’t had the chance to own one yet, but I truly hope my dream of having a cat will come true once I’m in the U.S.!
 
-
-
+<div style="height: 20px;"></div>
 <a href="https://info.flagcounter.com/sgPX"><img src="https://s01.flagcounter.com/map/sgPX/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
