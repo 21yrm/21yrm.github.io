@@ -34,6 +34,9 @@
       {% if author.university_email %}
         <li><a href="mailto:{{ author.university_email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> University Email</a></li>
       {% endif %}
+      {% if author.CV %}
+        <li><a href="{{ author.CV }}" target="_blank"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV</a></li>
+      {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
       {% endif %}
