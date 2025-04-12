@@ -26,22 +26,17 @@ redirect_from:
 <span class='anchor' id='-publications'></span>
 # 📝 Publications 
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">CVPR 2025</div>
-      <img src='images/500x300.png' alt="sym" width="100%">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
-    AirRoom: Objects Matter in Room Reidentification
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-    **Runmao Yao**, Yi Du, Zhuoqun Chen, Haoze Zheng, Chen Wang
+AirRoom: Objects Matter in Room Reidentification
 
-    IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
+**Runmao Yao**, Yi Du, Zhuoqun Chen, Haoze Zheng, Chen Wang
 
-    \[[**arXiv**](https://www.arxiv.org/abs/2503.01130)\] \[[**Code**](https://www.arxiv.org/abs/2503.01130)\] \  [[**Project   Page**](https://www.arxiv.org/abs/2503.01130)\]
-  </div>
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
+
+\[[**arXiv**](https://www.arxiv.org/abs/2503.01130)\] \[[**Code**](https://www.arxiv.org/abs/2503.01130)\] \[[**Project Page**](https://www.arxiv.org/abs/2503.01130)\]
+</div>
 </div>
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
