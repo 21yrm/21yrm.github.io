@@ -19,9 +19,11 @@ redirect_from:
 # 🙋‍♂️ About Me
 👋Hi there! I am an incoming Master's student in **Computer Vision (MSCV)** at the **Robotics Institute**, **Carnegie Mellon University**. Prior to this, I completed my **Bachelor of Engineering** at the **School of Software**, **Tsinghua University**. I am honored to have had the opportunity to collaborate with [Prof. Yu-Shen Liu](https://yushen-liu.github.io/), [Prof. Chen Wang](https://sairlab.org/chenw/), and [Prof. Yi Wu](https://jxwuyi.weebly.com/).
 
+<span class='anchor' id='-news'></span>
 # 🔥 News
 - *2025.02*: &nbsp;🎉 Two papers have been accepted by CVPR 2025.
 
+<span class='anchor' id='-publications'></span>
 # 📝 Publications 
 
 <div class='paper-box'>
@@ -44,6 +46,7 @@ redirect_from:
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
+<span class='anchor' id='-honors-and-awards'></span>
 # 🏅 Honors and Awards
 - *2024.09* **Comprehensive Excellence Award**, Tsinghua University.
 - *2023.09* **Comprehensive Excellence Award**, Tsinghua University.
@@ -53,10 +56,12 @@ redirect_from:
 - *2022.01* **Third Prize in the Software Competition**, Tsinghua University.
 - *2021.12* **Second Prize Scholarship for Incoming Students**, Tsinghua University.
 
+<span class='anchor' id='-educations'></span>
 # 📖 Educations
 - *2025.08 - 2026.12 (expected)*, Master of Science in Computer Vision, Robotics Institute, Carnegie Mellon University, Pittsburgh, USA.
 - *2021.09 - 2025.06*, Bachelor of Engineering, School of Software, Tsinghua University, Beijing, China. 
 
+<span class='anchor' id='-internships'></span>
 # 💻 Internships
 - *2024.12 - 2025.06*, Research Assistant at the School of Software, Tsinghua University, supervised by [Prof. Yu-Shen Liu](https://yushen-liu.github.io/).
 - *2024.07 - 2025.02*, Research Assistant at SAIR Lab, University at Buffalo, supervised by [Prof. Chen Wang](https://sairlab.org/chenw/).
