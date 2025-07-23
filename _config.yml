@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Runmao Yao (姚润茂)"
-description              : "Incoming MSCV student at Carnegie Mellon University, Fall 2025. Focusing on Computer Vision."
+description              : "Graduated with a Bachelor of Engineering from Tsinghua University. Passionate about Computer Vision research."
 repository               : "21yrm/21yrm.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,13 +23,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Runmao Yao 姚润茂"
   avatar           : "images/avatar.jpg"
-  bio              : "Carnegie Mellon University"
-  location         : "Pittsburgh, PA, USA"
+  bio              : "Tsinghua University"
+  location         : "Beijing, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
   email            : "yaorunmao@gmail.com"
-  university_email : "runmaoy@andrew.cmu.edu"
+  university_email : 
   CV               : "files/CV.pdf"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :

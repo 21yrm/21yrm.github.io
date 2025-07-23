@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # 🙋‍♂️ About Me
-👋Hi there! I am an incoming Master's student in **Computer Vision (MSCV)** at the **Robotics Institute**, **Carnegie Mellon University**. Prior to this, I completed my **Bachelor of Engineering** at the **School of Software**, **Tsinghua University**. I am honored to have had the opportunity to collaborate with [Prof. Yu-Shen Liu](https://yushen-liu.github.io/), [Prof. Chen Wang](https://sairlab.org/chenw/), and [Prof. Yi Wu](https://jxwuyi.weebly.com/).
+👋Hi there! I'm **Runmao Yao (姚润茂)**. I received my **Bachelor of Engineering** from the **School of Software**, **Tsinghua University**. During my undergraduate studies, I was fortunate to collaborate with [Prof. Yu-Shen Liu](https://yushen-liu.github.io/), [Prof. Chen Wang](https://sairlab.org/chenw/), and [Prof. Yi Wu](https://jxwuyi.weebly.com/), whose guidance greatly shaped my academic development.
 
 <span class='anchor' id='-news'></span>
 # 🔥 News
@@ -68,7 +68,6 @@ In this paper, we propose SuperPC, a novel neural architecture that jointly solv
 
 <span class='anchor' id='-educations'></span>
 # 📖 Educations
-- *2025.08 - 2026.12 (expected)*, Master of Science in Computer Vision, Robotics Institute, Carnegie Mellon University, Pittsburgh, USA.
 - *2021.09 - 2025.06*, Bachelor of Engineering, School of Software, Tsinghua University, Beijing, China. 
 
 <span class='anchor' id='-internships'></span>
