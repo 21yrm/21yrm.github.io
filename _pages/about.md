@@ -23,7 +23,7 @@ redirect_from:
 <span class='anchor' id='-news'></span>
 # 🔥 News
 
-- *2025.06*: &nbsp;🎓 Graduated from Tsinghua University (B.Eng. in Software Engineering)..
+- *2025.06*: &nbsp;🎓 Graduated from Tsinghua University (B.Eng. in Software Engineering).
 - *2025.02*: &nbsp;🎉 Two papers have been accepted by CVPR 2025.
 
 <span class='anchor' id='-publications'></span>
