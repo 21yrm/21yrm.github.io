@@ -17,10 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # 🙋‍♂️ About Me
-👋Hi there! I'm **Runmao Yao (姚润茂)**. I received my **Bachelor of Engineering** from the **School of Software**, **Tsinghua University**. During my undergraduate studies, I was fortunate to collaborate with [Prof. Yu-Shen Liu](https://yushen-liu.github.io/), [Prof. Chen Wang](https://sairlab.org/chenw/), and [Prof. Yi Wu](https://jxwuyi.weebly.com/), whose guidance greatly shaped my academic development.
+
+👋Hi there! I'm **Runmao Yao (姚润茂)**. I am an incoming Research Assistant at **MMLab**, **Nanyang Technological University (NTU)**, supervised by [Prof. Ziwei Liu](https://liuziwei7.github.io/). I received my **Bachelor of Engineering** degree from the **School of Software**, **Tsinghua University**. During my undergraduate studies, I was fortunate to work with [Prof. Yu-Shen Liu](https://yushen-liu.github.io/), [Prof. Chen Wang](https://sairlab.org/chenw/), and [Prof. Yi Wu](https://jxwuyi.weebly.com/), whose guidance has greatly shaped my academic journey.
 
 <span class='anchor' id='-news'></span>
 # 🔥 News
+
+- *2025.06*: &nbsp;🎓 Graduated from Tsinghua University (B.Eng. in Software Engineering)..
 - *2025.02*: &nbsp;🎉 Two papers have been accepted by CVPR 2025.
 
 <span class='anchor' id='-publications'></span>
