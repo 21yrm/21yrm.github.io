@@ -82,12 +82,10 @@ In this paper, we propose SuperPC, a novel neural architecture that jointly solv
 <span class='anchor' id='-misc'></span>
 # 🗂️ Misc
 ## 🏎️ Formula 1
-I have a deep passion for Formula 1—not only because of the sleek and futuristic design of the race cars, but also because of the pure thrill that high-speed racing brings me.
-- My favorite driver is **Max Verstappen**, the phenomenal Dutch racer. His intense focus and total dedication to racing are truly inspiring—his mind is fully immersed in the sport. What resonates with me most is his **tenacious and fiercely competitive driving style**. Especially in the 2025 season, even with Red Bull’s car being less dominant, Max continues to push the limits, consistently breaking lap records through his **unparalleled driving skills**.
-- I’m also a proud member of the **Tsinghua Racing Association**, a student club dedicated to motorsports. I enjoy the club’s various activities, such as **watching the Chinese Grand Prix live together** and **going go-karting** with fellow enthusiasts. It’s a great way to connect with like-minded people and stay close to the racing world.
+I’m deeply passionate about Formula 1, and my favorite driver is **Max Verstappen**.
 
 ## 🐾 Pets
-I genuinely love all kinds of pets—cats, dogs, birds, fish—you name it. But **cats** have always been my number one favorite. Unfortunately, I haven’t had the chance to own one yet, but I truly hope my dream of having a cat will come true once I’m in the U.S.!
+I’ve always loved **cats** the most. Although I haven’t had the chance to own one yet, I truly hope that someday my dream of having a cat will come true.
 
 <div style="height: 20px;"></div>
 <a href="https://info.flagcounter.com/sgPX"><img src="https://s01.flagcounter.com/map/sgPX/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
