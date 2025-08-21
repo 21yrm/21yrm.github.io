@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # 🙋‍♂️ About Me
 
-👋Hi there! I'm **Runmao Yao (姚润茂)**. I am an incoming Research Assistant at **MMLab**, **Nanyang Technological University (NTU)**, supervised by [Prof. Ziwei Liu](https://liuziwei7.github.io/). I received my **Bachelor of Engineering** degree from the **School of Software**, **Tsinghua University**. During my undergraduate studies, I was fortunate to work with [Prof. Yu-Shen Liu](https://yushen-liu.github.io/), [Prof. Chen Wang](https://sairlab.org/chenw/), and [Prof. Yi Wu](https://jxwuyi.weebly.com/), whose guidance has greatly shaped my academic journey.
+👋Hi there! I'm **Runmao Yao (姚润茂)**. I am an incoming Research Assistant at **MMLab**, **Nanyang Technological University (NTU)**, supervised by [Prof. Ziwei Liu](https://liuziwei7.github.io/). I received my **Bachelor of Engineering** degree from the **School of Software**, **Tsinghua University**. During my undergraduate studies, I was fortunate to work with [Prof. Yu-Shen Liu](https://yushen-liu.github.io/) and [Prof. Chen Wang](https://sairlab.org/chenw/), whose guidance has greatly shaped my academic journey.
 
 <span class='anchor' id='-news'></span>
 # 🔥 News
@@ -77,7 +77,6 @@ In this paper, we propose SuperPC, a novel neural architecture that jointly solv
 # 💻 Internships
 - *2024.12 - 2025.06*, Research Assistant at the School of Software, Tsinghua University, supervised by [Prof. Yu-Shen Liu](https://yushen-liu.github.io/).
 - *2024.07 - 2025.02*, Research Assistant at SAIR Lab, University at Buffalo, supervised by [Prof. Chen Wang](https://sairlab.org/chenw/).
-- *2024.03 - 2024.08*, Research Assistant at the Institute for Interdisciplinary Information Sciences, Tsinghua University, supervised by [Prof. Yi Wu](https://jxwuyi.weebly.com/).
 
 <span class='anchor' id='-misc'></span>
 # 🗂️ Misc
