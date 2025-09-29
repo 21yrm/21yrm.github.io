@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # 🙋‍♂️ About Me
 
-👋Hi there! I'm **Runmao Yao (姚润茂)**. I am an incoming Research Assistant at **MMLab**, **Nanyang Technological University (NTU)**, supervised by [Prof. Ziwei Liu](https://liuziwei7.github.io/). I received my **Bachelor of Engineering** degree from the **School of Software**, **Tsinghua University**. During my undergraduate studies, I was fortunate to work with [Prof. Yu-Shen Liu](https://yushen-liu.github.io/) and [Prof. Chen Wang](https://sairlab.org/chenw/), whose guidance has greatly shaped my academic journey.
+👋Hi there! I'm **Runmao Yao (姚润茂)**. I am a Research Assistant at **MMLab**, **Nanyang Technological University (NTU)**, supervised by [Prof. Ziwei Liu](https://liuziwei7.github.io/). I received my **Bachelor of Engineering** degree from the **School of Software**, **Tsinghua University**. During my undergraduate studies, I was fortunate to work with [Prof. Yu-Shen Liu](https://yushen-liu.github.io/) and [Prof. Chen Wang](https://sairlab.org/chenw/), whose guidance has greatly shaped my academic journey.
 
 <span class='anchor' id='-news'></span>
 # 🔥 News
