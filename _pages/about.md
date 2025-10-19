@@ -84,7 +84,7 @@ In this paper, we propose SuperPC, a novel neural architecture that jointly solv
 I’m deeply passionate about Formula 1, and my favorite driver is **Max Verstappen**.
 
 ## 🐾 Pets
-I’ve always loved **cats** the most. Although I haven’t had the chance to own one yet, I truly hope that someday my dream of having a cat will come true.
+I’ve always loved **cats** the most.
 
 <div style="height: 20px;"></div>
 <a href="https://info.flagcounter.com/sgPX"><img src="https://s01.flagcounter.com/map/sgPX/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
