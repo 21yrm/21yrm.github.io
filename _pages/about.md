@@ -24,7 +24,7 @@ redirect_from:
 # 🔥 News
 
 - *2025.06*: &nbsp;🎓 Graduated from Tsinghua University (B.Eng. in Software Engineering).
-- *2025.02*: &nbsp;🎉 Two papers have been accepted by CVPR 2025.
+- *2025.02*: &nbsp;🎉 AirRoom and SuperPC have been accepted by CVPR 2025.
 
 <span class='anchor' id='-publications'></span>
 # 📝 Publications 
@@ -53,7 +53,7 @@ Yi Du, Zhipeng Zhao, Shaoshu Su, Sharath Golluri, Haoze Zheng, **Runmao Yao**, C
 
 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
 
-\[[**arXiv**](https://arxiv.org/abs/2503.14558)\] \[[**Code**]()\] \[[**Project Page**](https://sairlab.org/superpc/)\]
+\[[**arXiv**](https://arxiv.org/abs/2503.14558)\] \[[**Project Page**](https://sairlab.org/superpc/)\]
 
 In this paper, we propose SuperPC, a novel neural architecture that jointly solves inherent shortcomings in the raw point clouds, including noise, sparsity, incompleteness, and the absence of color.
 </div>
