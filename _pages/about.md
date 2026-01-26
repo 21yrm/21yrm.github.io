@@ -35,7 +35,7 @@ redirect_from:
 
 AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding
 
-**Runmao Yao***, Junsheng Zhou*, Zhen Dong, Yu-Shen Liu
+**Runmao Yao\***, Junsheng Zhou\*, Zhen Dong, Yu-Shen Liu
 
 arXiv, 2026
 
