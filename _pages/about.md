@@ -30,7 +30,7 @@ redirect_from:
 <span class='anchor' id='-publications'></span>
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><img src='images/AnchoredDream.jpg' alt="sym" width="100%"></div>
+<div class='paper-box'><div class='paper-box-image'><img src='images/AnchoredDream.png' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
 
 AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding
