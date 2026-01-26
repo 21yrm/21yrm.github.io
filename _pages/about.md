@@ -23,11 +23,27 @@ redirect_from:
 <span class='anchor' id='-news'></span>
 # 🔥 News
 
+- *2026.01*: &nbsp;🎉 AnchoredDream is now available on arXiv.
 - *2025.06*: &nbsp;🎓 Graduated from Tsinghua University (B.Eng. in Software Engineering).
 - *2025.02*: &nbsp;🎉 AirRoom and SuperPC have been accepted by CVPR 2025.
 
 <span class='anchor' id='-publications'></span>
 # 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><img src='images/AnchoredDream.jpg' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding
+
+**Runmao Yao***, Junsheng Zhou*, Zhen Dong, Yu-Shen Liu
+
+arXiv, 2026
+
+\[[**arXiv**](https://arxiv.org/abs/2601.16532)\]
+
+In this paper, we propose AnchoredDream, a novel zero-shot pipeline that anchors 360° scene generation on high-fidelity geometry via an appearance-geometry mutual boosting mechanism.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><img src='images/AirRoom.png' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
