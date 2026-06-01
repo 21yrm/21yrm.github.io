@@ -8,6 +8,7 @@ from urllib.request import Request, urlopen
 
 
 SCHOLAR_URL = "https://scholar.google.com/citations?user={scholar_id}&hl=en"
+DEFAULT_AUTHOR_NAME = "Runmao Yao"
 
 
 def fetch_profile_html(scholar_id: str) -> str:
@@ -50,12 +51,16 @@ def parse_profile(page: str, scholar_id: str) -> dict:
 
     citedby = int(citation_cells[0].replace(",", ""))
 
+    return build_author(scholar_id, name, citedby, SCHOLAR_URL.format(scholar_id=scholar_id))
+
+
+def build_author(scholar_id: str, name: str, citedby: int, source: str) -> dict:
     return {
         "scholar_id": scholar_id,
         "name": name,
         "citedby": citedby,
         "updated": datetime.now(timezone.utc).isoformat(),
-        "source": SCHOLAR_URL.format(scholar_id=scholar_id),
+        "source": source,
     }
 
 
@@ -77,11 +82,19 @@ def main() -> None:
     scholar_id = os.environ["GOOGLE_SCHOLAR_ID"]
     print(f"Fetching Google Scholar stats for {scholar_id}", flush=True)
 
-    try:
-        page = fetch_profile_html(scholar_id)
-        author = parse_profile(page, scholar_id)
-    except (HTTPError, URLError, TimeoutError, RuntimeError) as error:
-        raise SystemExit(f"Failed to fetch Google Scholar stats: {error}") from error
+    citedby_override = os.environ.get("CITEDBY_OVERRIDE", "").strip()
+    if citedby_override:
+        try:
+            citedby = int(citedby_override.replace(",", ""))
+        except ValueError as error:
+            raise SystemExit(f"Invalid CITEDBY_OVERRIDE value: {citedby_override}") from error
+        author = build_author(scholar_id, DEFAULT_AUTHOR_NAME, citedby, "manual workflow input")
+    else:
+        try:
+            page = fetch_profile_html(scholar_id)
+            author = parse_profile(page, scholar_id)
+        except (HTTPError, URLError, TimeoutError, RuntimeError) as error:
+            raise SystemExit(f"Failed to fetch Google Scholar stats: {error}") from error
 
     print(json.dumps(author, indent=2), flush=True)
     write_results(author)

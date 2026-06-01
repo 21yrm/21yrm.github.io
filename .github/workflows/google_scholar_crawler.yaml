@@ -2,6 +2,11 @@ name: Get Citation Data
 
 on:
   workflow_dispatch:
+    inputs:
+      citations:
+        description: 'Manual citation count fallback when Google Scholar blocks GitHub Actions'
+        required: false
+        type: string
   page_build:
   schedule:
     - cron: '0 8 * * *'
@@ -33,6 +38,7 @@ jobs:
           timeout 90s python main.py
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+          CITEDBY_OVERRIDE: ${{ inputs.citations }}
 
       - name: Publish citation data
         run: |
