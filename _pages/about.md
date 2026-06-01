@@ -154,6 +154,38 @@ redirect_from:
       <div id="pub-masonry" class="pub-container fade-in">
         <article class="pub-card">
           <div class="pub-thumb">
+            <img src="images/SpatialBench.png" alt="SpatialBench" loading="lazy">
+            <span class="pub-badge">arXiv 2026</span>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">SpatialBench: Is Your Spatial Foundation Model an All-Round Player?</h3>
+            <p class="pub-authors">Haosong Peng, Hao Li, Jiaqi Chen, Yuhao Pan, <strong>Runmao Yao</strong>, Yalun Dai, Fushuo Huo, Fangzhou Hong, Zhaoxi Chen, Haozhao Wang, Dingwen Zhang, Ziwei Liu, Wenchao Xu</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2605.27367">Paper</a>
+              <a href="https://github.com/Ropedia/SpatialBench">Code</a>
+              <a href="https://ropedia.github.io/SpatialBench/">Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-thumb">
+            <img src="images/PhysX-Omni.png" alt="PhysX-Omni" loading="lazy">
+            <span class="pub-badge">arXiv 2026</span>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects</h3>
+            <p class="pub-authors">Ziang Cao, Yinghao Liu, Haitian Li, <strong>Runmao Yao</strong>, Fangzhou Hong, Zhaoxi Chen, Liang Pan, Ziwei Liu</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2605.21572">Paper</a>
+              <a href="https://github.com/physx-omni/PhysX-Omni">Code</a>
+              <a href="https://physx-omni.github.io/">Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-thumb">
             <img src="images/AnchoredDream.png" alt="AnchoredDream" loading="lazy">
             <span class="pub-badge">arXiv 2026</span>
           </div>
@@ -162,22 +194,6 @@ redirect_from:
             <p class="pub-authors"><strong>Runmao Yao*</strong>, Junsheng Zhou*, Zhen Dong, Yu-Shen Liu</p>
             <div class="pub-links">
               <a href="https://arxiv.org/abs/2601.16532">Paper</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-thumb">
-            <img src="images/AirRoom.png" alt="AirRoom" loading="lazy">
-            <span class="pub-badge">CVPR 2025</span>
-          </div>
-          <div class="pub-info">
-            <h3 class="pub-title">AirRoom: Objects Matter in Room Reidentification</h3>
-            <p class="pub-authors"><strong>Runmao Yao</strong>, Yi Du, Zhuoqun Chen, Haoze Zheng, Chen Wang</p>
-            <div class="pub-links">
-              <a href="https://www.arxiv.org/abs/2503.01130">Paper</a>
-              <a href="https://github.com/21yrm/AirRoom">Code</a>
-              <a href="https://sairlab.org/airroom/">Project</a>
             </div>
           </div>
         </article>
@@ -194,6 +210,22 @@ redirect_from:
               <a href="https://arxiv.org/abs/2503.14558">Paper</a>
               <a href="https://github.com/sair-lab/SuperPC">Code</a>
               <a href="https://sairlab.org/superpc/">Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-thumb">
+            <img src="images/AirRoom.png" alt="AirRoom" loading="lazy">
+            <span class="pub-badge">CVPR 2025</span>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">AirRoom: Objects Matter in Room Reidentification</h3>
+            <p class="pub-authors"><strong>Runmao Yao</strong>, Yi Du, Zhuoqun Chen, Haoze Zheng, Chen Wang</p>
+            <div class="pub-links">
+              <a href="https://www.arxiv.org/abs/2503.01130">Paper</a>
+              <a href="https://github.com/21yrm/AirRoom">Code</a>
+              <a href="https://sairlab.org/airroom/">Project</a>
             </div>
           </div>
         </article>

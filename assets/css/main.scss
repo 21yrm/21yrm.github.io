@@ -1052,13 +1052,14 @@ html.choiszt-page .citation-badge:hover {
 
 html.choiszt-page .pub-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: start;
     gap: 20px;
 }
 
-html.choiszt-page .pub-card {
-    align-self: start;
+html.choiszt-page .pub-column {
+    display: grid;
+    gap: 20px;
 }
 
 html.choiszt-page .pub-card,
@@ -1336,6 +1337,12 @@ html.choiszt-page .fade-in.visible {
     transform: translateY(0);
 }
 
+@media (max-width: 980px) {
+    html.choiszt-page .pub-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     html.choiszt-page .section {
         padding: 36px 0;
@@ -1364,9 +1371,12 @@ html.choiszt-page .fade-in.visible {
         font-size: 0.8rem;
     }
 
-    html.choiszt-page .pub-container,
     html.choiszt-page .projects-grid,
     html.choiszt-page .misc-grid {
+        grid-template-columns: 1fr;
+    }
+
+    html.choiszt-page .pub-container {
         grid-template-columns: 1fr;
     }
 
