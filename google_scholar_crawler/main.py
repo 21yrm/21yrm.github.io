@@ -4,10 +4,12 @@ import os
 import re
 from datetime import datetime, timezone
 from urllib.error import HTTPError, URLError
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 
 SCHOLAR_URL = "https://scholar.google.com/citations?user={scholar_id}&hl=en"
+SERPAPI_URL = "https://serpapi.com/search.json"
 DEFAULT_AUTHOR_NAME = "Runmao Yao"
 
 
@@ -27,6 +29,50 @@ def fetch_profile_html(scholar_id: str) -> str:
 
     with urlopen(request, timeout=30) as response:
         return response.read().decode("utf-8", errors="replace")
+
+
+def fetch_serpapi_profile(scholar_id: str, api_key: str) -> dict:
+    params = urlencode(
+        {
+            "engine": "google_scholar_author",
+            "author_id": scholar_id,
+            "hl": "en",
+            "api_key": api_key,
+        }
+    )
+    request = Request(
+        f"{SERPAPI_URL}?{params}",
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "21yrm.github.io citation updater",
+        },
+    )
+
+    with urlopen(request, timeout=45) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def parse_serpapi_profile(data: dict, scholar_id: str) -> dict:
+    if data.get("error"):
+        raise RuntimeError(data["error"])
+
+    author = data.get("author") or {}
+    cited_by = data.get("cited_by") or {}
+    table = cited_by.get("table") or []
+    citations = table[0].get("citations", {}) if table else {}
+    citedby = citations.get("all")
+
+    if not isinstance(citedby, int):
+        raise RuntimeError("SerpAPI response did not include cited_by.table[0].citations.all")
+
+    name = author.get("name") or DEFAULT_AUTHOR_NAME
+    source = data.get("search_metadata", {}).get("google_scholar_author_url")
+    return build_author(
+        scholar_id,
+        name,
+        citedby,
+        source or SCHOLAR_URL.format(scholar_id=scholar_id),
+    )
 
 
 def extract_text(pattern: str, page: str) -> str | None:
@@ -83,12 +129,19 @@ def main() -> None:
     print(f"Fetching Google Scholar stats for {scholar_id}", flush=True)
 
     citedby_override = os.environ.get("CITEDBY_OVERRIDE", "").strip()
+    serpapi_api_key = os.environ.get("SERPAPI_API_KEY", "").strip()
     if citedby_override:
         try:
             citedby = int(citedby_override.replace(",", ""))
         except ValueError as error:
             raise SystemExit(f"Invalid CITEDBY_OVERRIDE value: {citedby_override}") from error
         author = build_author(scholar_id, DEFAULT_AUTHOR_NAME, citedby, "manual workflow input")
+    elif serpapi_api_key:
+        try:
+            data = fetch_serpapi_profile(scholar_id, serpapi_api_key)
+            author = parse_serpapi_profile(data, scholar_id)
+        except (HTTPError, URLError, TimeoutError, RuntimeError, json.JSONDecodeError) as error:
+            raise SystemExit(f"Failed to fetch Google Scholar stats from SerpAPI: {error}") from error
     else:
         try:
             page = fetch_profile_html(scholar_id)

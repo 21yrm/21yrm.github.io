@@ -38,6 +38,7 @@ jobs:
           timeout 90s python main.py
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
           CITEDBY_OVERRIDE: ${{ inputs.citations }}
 
       - name: Publish citation data
