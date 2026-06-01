@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="choiszt-page" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Runmao Yao</title>
+  <meta name="description" content="{{ site.description | default: site.title }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/images/racing-car-favicon.svg' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  {{ content }}
+
+  <script>
+    document.querySelectorAll('a[href^="http"]').forEach((link) => {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    });
+
+    const progress = document.getElementById("scroll-progress");
+    window.addEventListener("scroll", () => {
+      if (!progress) return;
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.width = `${scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0}%`;
+    }, { passive: true });
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          fadeObserver.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+    document.querySelectorAll(".fade-in").forEach((el) => fadeObserver.observe(el));
+
+    const sections = document.querySelectorAll(".section[id]");
+    const navLinks = document.querySelectorAll(".nav-links a");
+    const navObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          navLinks.forEach((link) => {
+            link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+          });
+        }
+      }
+    }, { threshold: 0.2, rootMargin: "-80px 0px -50% 0px" });
+    sections.forEach((section) => navObserver.observe(section));
+
+    document.querySelectorAll(".pub-card, .news-frame, .info-card, .misc-card").forEach((card) => {
+      card.addEventListener("mousemove", (event) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty("--glow-x", `${event.clientX - rect.left}px`);
+        card.style.setProperty("--glow-y", `${event.clientY - rect.top}px`);
+        card.style.setProperty("--glow-opacity", "1");
+      });
+      card.addEventListener("mouseleave", () => {
+        card.style.setProperty("--glow-opacity", "0");
+      });
+    });
+
+    const updated = document.getElementById("last-updated");
+    if (updated) {
+      updated.textContent = new Date().toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+    }
+
+    const citationCount = document.getElementById("citation-count");
+    if (citationCount) {
+      const citationSources = [
+        "https://cdn.jsdelivr.net/gh/21yrm/21yrm.github.io@google-scholar-stats/gs_data.json",
+        "https://raw.githubusercontent.com/21yrm/21yrm.github.io/google-scholar-stats/gs_data.json"
+      ];
+      (async () => {
+        for (const source of citationSources) {
+          try {
+            const response = await fetch(source, { cache: "no-store" });
+            if (!response.ok) continue;
+            const data = await response.json();
+            if (Number.isFinite(data.citedby)) {
+              citationCount.textContent = `${data.citedby} citations`;
+              break;
+            }
+          } catch (error) {
+            // Citation stats are published by the scheduled GitHub Action.
+          }
+        }
+      })();
+    }
+
+    const cyberDog = document.getElementById("cyber-dog");
+    const petBubble = document.getElementById("pet-bubble");
+    const petBubbleText = document.getElementById("pet-bubble-text");
+    if (cyberDog && petBubble && petBubbleText) {
+      const petMessages = [
+        "Race pace looks good.",
+        "Runmao is reading papers.",
+        "World models need telemetry.",
+        "One more lap through arXiv.",
+        "Video generation on soft tires.",
+        "DRS enabled for ideas.",
+        "Debugging the racing line."
+      ];
+      const petMaps = [
+        ["dog", ["..#.....#.T", ".##.....##T", ".#########.", ".#WW###WW#.", ".#WL###PW#.", ".##..N..##.", "..##Q##Q##.", "..#######..", "..#######..", "..##...##..", ".###...###."]],
+        ["cat", [".#.......#.", ".##.....##.", ".#########.", ".#WW###WW#.", ".#WL###PW#.", ".##..N..##.", "..#.Q#Q.#..", "..#######..", "..#######..", "..##...##.T", "..##...##T."]],
+        ["bunny", ["..##...##..", "..##...##..", ".#########.", ".#WW###WW#.", ".#WL###PW#.", ".####N####.", "..##Q#Q##..", "..#######..", "..#######..", "..##...##..", ".###...###."]],
+        ["fox", ["#.........#", "##.......##", ".#########.", ".#WW###WW#.", ".#WL###PW#.", ".##..N..##.", "..##Q#Q##..", "..#######..", "..######.TT", "..##...#.TT", ".###...###."]],
+        ["owl", ["..##...##..", ".####.####.", ".##WW#WW##.", ".##WL#PW##.", ".###NNN###.", "..########.", "..#.####.#.", "..#.Q##Q.#.", "..########.", "...##..##..", "...##..##.."]],
+        ["robot", [".T##.####T.", "..########.", ".##WW#WW##.", ".##WL#PW##.", ".##NNNNN##.", ".##Q###Q##.", "..########.", "..########.", "..########.", "..##...##..", ".###...###."]]
+      ];
+      const pixel = 4;
+      const svgNs = "http://www.w3.org/2000/svg";
+      let petIndex = Math.floor(Math.random() * petMaps.length);
+      let bubbleTimer = null;
+      let cycleTimer = null;
+      let messageIndex = 0;
+      let currentBlinkMasks = [];
+      let currentEyes = [];
+      let currentTongues = [];
+
+      function drawPet(map) {
+        cyberDog.innerHTML = "";
+        const width = map[0].length;
+        const height = map.length;
+        const svg = document.createElementNS(svgNs, "svg");
+        svg.setAttribute("viewBox", `0 0 ${width * pixel} ${height * pixel}`);
+        svg.setAttribute("width", `${width * pixel}`);
+        svg.setAttribute("height", `${height * pixel}`);
+        const tailGroup = document.createElementNS(svgNs, "g");
+        tailGroup.setAttribute("class", "dog-tail-group");
+        svg.appendChild(tailGroup);
+        const blinkMasks = [];
+        const eyes = [];
+        const tongues = [];
+
+        function rect(x, y, fill, parent = svg, opacity = "0.85") {
+          const node = document.createElementNS(svgNs, "rect");
+          node.setAttribute("x", `${x * pixel}`);
+          node.setAttribute("y", `${y * pixel}`);
+          node.setAttribute("width", `${pixel}`);
+          node.setAttribute("height", `${pixel}`);
+          node.setAttribute("fill", fill);
+          node.setAttribute("opacity", opacity);
+          parent.appendChild(node);
+          return node;
+        }
+
+        map.forEach((row, y) => {
+          [...row].forEach((cell, x) => {
+            if (cell === ".") return;
+            if (cell === "#") rect(x, y, "var(--accent)", svg);
+            if (cell === "N") rect(x, y, "#1a1a2e", svg, "1");
+            if (cell === "T") rect(x, y, "var(--accent)", tailGroup, "0.75");
+            if (cell === "Q") {
+              const tongue = rect(x, y, "#f87171", svg, "0");
+              tongue.classList.add("dog-tongue-px");
+              tongues.push(tongue);
+            }
+            if (cell === "W" || cell === "L" || cell === "P") {
+              const eyeWhite = rect(x, y, "#fff", svg, "1");
+              eyes.push(eyeWhite);
+              if (cell === "L" || cell === "P") rect(x, y, "#1a1a2e", svg, "1");
+              const blinkMask = rect(x, y, "var(--accent)", svg);
+              blinkMask.style.display = "none";
+              blinkMasks.push(blinkMask);
+            }
+          });
+        });
+
+        currentBlinkMasks = blinkMasks;
+        currentEyes = eyes;
+        currentTongues = tongues;
+        cyberDog.replaceChildren(svg);
+      }
+
+      function hidePetBubble() {
+        const text = petBubbleText.textContent || "";
+        if (text.length > 0) {
+          petBubbleText.textContent = text.slice(0, -1);
+          bubbleTimer = window.setTimeout(hidePetBubble, 28);
+          return;
+        }
+        petBubble.classList.remove("visible");
+        scheduleNextMessage();
+      }
+
+      function showPetMessage(message) {
+        if (bubbleTimer) window.clearTimeout(bubbleTimer);
+        if (cycleTimer) window.clearTimeout(cycleTimer);
+        petBubbleText.textContent = "";
+        petBubble.classList.add("visible");
+        let index = 0;
+        function typeNext() {
+          if (index < message.length) {
+            petBubbleText.textContent = message.slice(0, index + 1);
+            index += 1;
+            bubbleTimer = window.setTimeout(typeNext, 42);
+            return;
+          }
+          bubbleTimer = window.setTimeout(hidePetBubble, 5200);
+        }
+        typeNext();
+      }
+
+      function nextPet() {
+        petIndex = (petIndex + 1) % petMaps.length;
+        drawPet(petMaps[petIndex][1]);
+      }
+
+      function showNextMessage() {
+        messageIndex = (messageIndex + 1) % petMessages.length;
+        showPetMessage(petMessages[messageIndex]);
+      }
+
+      function scheduleNextMessage() {
+        if (cycleTimer) window.clearTimeout(cycleTimer);
+        cycleTimer = window.setTimeout(showNextMessage, 6500);
+      }
+
+      drawPet(petMaps[petIndex][1]);
+      window.setTimeout(() => showPetMessage(petMessages[0]), 1000);
+      window.setInterval(() => {
+        if (Math.random() > 0.35) return;
+        currentBlinkMasks.forEach((node) => { node.style.display = ""; });
+        currentEyes.forEach((node) => { node.style.display = "none"; });
+        window.setTimeout(() => {
+          currentBlinkMasks.forEach((node) => { node.style.display = "none"; });
+          currentEyes.forEach((node) => { node.style.display = ""; });
+        }, 100);
+      }, 2800);
+      window.setInterval(() => {
+        if (Math.random() > 0.25 || currentTongues.length === 0) return;
+        currentTongues.forEach((node) => node.setAttribute("opacity", "1"));
+        window.setTimeout(() => currentTongues.forEach((node) => node.setAttribute("opacity", "0")), 1200);
+      }, 4000);
+      cyberDog.addEventListener("click", nextPet);
+      cyberDog.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          nextPet();
+        }
+      });
+    }
+  </script>
+</body>
+</html>
