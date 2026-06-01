@@ -1053,7 +1053,12 @@ html.choiszt-page .citation-badge:hover {
 html.choiszt-page .pub-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    align-items: start;
     gap: 20px;
+}
+
+html.choiszt-page .pub-card {
+    align-self: start;
 }
 
 html.choiszt-page .pub-card,

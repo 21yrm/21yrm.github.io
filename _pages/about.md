@@ -192,6 +192,7 @@ redirect_from:
             <p class="pub-authors">Yi Du, Zhipeng Zhao, Shaoshu Su, Sharath Golluri, Haoze Zheng, <strong>Runmao Yao</strong>, Chen Wang</p>
             <div class="pub-links">
               <a href="https://arxiv.org/abs/2503.14558">Paper</a>
+              <a href="https://github.com/sair-lab/SuperPC">Code</a>
               <a href="https://sairlab.org/superpc/">Project</a>
             </div>
           </div>
