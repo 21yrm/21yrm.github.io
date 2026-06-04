@@ -1605,6 +1605,15 @@ html.choiszt-page #flagcounter-total {
     font-weight: inherit;
 }
 
+html.choiszt-page .flagcounter-pixel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 html.choiszt-page .fade-in {
     opacity: 0;
     transform: translateY(24px);

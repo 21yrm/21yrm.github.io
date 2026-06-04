@@ -349,5 +349,6 @@ redirect_from:
     <div class="footer-meta">
       <span class="footer-view-count mono">Total views: <span id="flagcounter-total">Loading</span></span>
     </div>
+    <img class="flagcounter-pixel" src="https://s01.flagcounter.com/count/4jbg/bg_FFFFFF/txt_FFFFFF/border_FFFFFF/columns_1/maxflags_1/viewers_0/labels_0/pageviews_1/flags_0/" alt="" aria-hidden="true">
   </div>
 </footer>
