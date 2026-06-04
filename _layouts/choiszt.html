@@ -8,8 +8,8 @@
   <link rel="icon" type="image/svg+xml" href="{{ '/images/racing-car-favicon.svg' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
   {{ content }}
@@ -126,6 +126,34 @@
       })();
     }
 
+    const flagcounterTotal = document.getElementById("flagcounter-total");
+    if (flagcounterTotal) {
+      const flagcounterSources = [
+        "https://cdn.jsdelivr.net/gh/21yrm/21yrm.github.io@flagcounter-stats/flagcounter.json",
+        "https://raw.githubusercontent.com/21yrm/21yrm.github.io/flagcounter-stats/flagcounter.json",
+        "{{ '/assets/data/flagcounter.json' | relative_url }}"
+      ];
+      (async () => {
+        for (const source of flagcounterSources) {
+          try {
+            const response = await fetch(source, { cache: "no-store" });
+            if (!response.ok) continue;
+            const data = await response.json();
+            const totalViews = Number(data.total_views);
+            if (Number.isFinite(totalViews)) {
+              flagcounterTotal.textContent = totalViews.toLocaleString("en-US");
+              break;
+            }
+          } catch (error) {
+            // FlagCounter stats are published by the scheduled GitHub Action.
+          }
+        }
+        if (flagcounterTotal.textContent === "Loading") {
+          flagcounterTotal.textContent = "Updating";
+        }
+      })();
+    }
+
     const cyberDog = document.getElementById("cyber-dog");
     const petBubble = document.getElementById("pet-bubble");
     const petBubbleText = document.getElementById("pet-bubble-text");
@@ -137,7 +165,8 @@
         "One more lap through arXiv.",
         "Video generation on soft tires.",
         "DRS enabled for ideas.",
-        "Debugging the racing line."
+        "Debugging the racing line.",
+        "Click me for another tiny pit-lane friend."
       ];
       const petMaps = [
         ["dog", ["..#.....#.T", ".##.....##T", ".#########.", ".#WW###WW#.", ".#WL###PW#.", ".##..N..##.", "..##Q##Q##.", "..#######..", "..#######..", "..##...##..", ".###...###."]],
@@ -145,7 +174,11 @@
         ["bunny", ["..##...##..", "..##...##..", ".#########.", ".#WW###WW#.", ".#WL###PW#.", ".####N####.", "..##Q#Q##..", "..#######..", "..#######..", "..##...##..", ".###...###."]],
         ["fox", ["#.........#", "##.......##", ".#########.", ".#WW###WW#.", ".#WL###PW#.", ".##..N..##.", "..##Q#Q##..", "..#######..", "..######.TT", "..##...#.TT", ".###...###."]],
         ["owl", ["..##...##..", ".####.####.", ".##WW#WW##.", ".##WL#PW##.", ".###NNN###.", "..########.", "..#.####.#.", "..#.Q##Q.#.", "..########.", "...##..##..", "...##..##.."]],
-        ["robot", [".T##.####T.", "..########.", ".##WW#WW##.", ".##WL#PW##.", ".##NNNNN##.", ".##Q###Q##.", "..########.", "..########.", "..########.", "..##...##..", ".###...###."]]
+        ["robot", [".T##.####T.", "..########.", ".##WW#WW##.", ".##WL#PW##.", ".##NNNNN##.", ".##Q###Q##.", "..########.", "..########.", "..########.", "..##...##..", ".###...###."]],
+        ["lion", ["...TTTTT...", "..T#####T..", ".T#######T.", ".T#WW#WW#T.", ".T#WL#PW#T.", "..###N###..", ".T##Q#Q##T.", "..#######..", "...#####...", "...##.##...", "..###.###.."]],
+        ["panda", ["..##...##..", ".#########.", "##WW###WW##", "##WL###PW##", ".####N####.", "..###Q###..", "...#####...", "..#######..", "..#######..", "..##...##..", ".###...###."]],
+        ["duck", ["....###....", "...#####...", "..#WW#WW#..", "..#WL#PW#..", "...##N##...", "..##QQQ##..", ".#########.", "..#######..", "...#####...", "...##.##...", "..###.###.."]],
+        ["tiger", ["T#T#T#T#T#T", ".#########.", ".#WW###WW#.", ".#WL###PW#.", "T###N###T..", ".##Q#Q##...", "..#######..", ".T#####T...", "..#######..", "..##...##..", ".###...###."]]
       ];
       const pixel = 4;
       const svgNs = "http://www.w3.org/2000/svg";
@@ -244,6 +277,9 @@
       function nextPet() {
         petIndex = (petIndex + 1) % petMaps.length;
         drawPet(petMaps[petIndex][1]);
+        const petName = petMaps[petIndex][0];
+        cyberDog.setAttribute("aria-label", `Change pixel pet. Current pet: ${petName}.`);
+        cyberDog.setAttribute("title", `Current pixel pet: ${petName}`);
       }
 
       function showNextMessage() {
@@ -256,6 +292,8 @@
         cycleTimer = window.setTimeout(showNextMessage, 6500);
       }
 
+      cyberDog.setAttribute("aria-label", `Change pixel pet. Current pet: ${petMaps[petIndex][0]}.`);
+      cyberDog.setAttribute("title", `Current pixel pet: ${petMaps[petIndex][0]}`);
       drawPet(petMaps[petIndex][1]);
       window.setTimeout(() => showPetMessage(petMessages[0]), 1000);
       window.setInterval(() => {

@@ -13,6 +13,7 @@ redirect_from:
 
 <nav id="nav">
   <div class="nav-inner">
+    <span class="nav-logo">Runmao Yao</span>
     <div class="nav-links">
       <a href="#about" data-label="About">About</a>
       <a href="#news" data-label="News">News</a>
@@ -20,7 +21,6 @@ redirect_from:
       <a href="#honors-and-awards" data-label="Honors and Awards">Honors and Awards</a>
       <a href="#educations" data-label="Educations">Educations</a>
       <a href="#internships" data-label="Internships">Internships</a>
-      <a href="#misc" data-label="Misc">Misc</a>
     </div>
   </div>
 </nav>
@@ -236,14 +236,43 @@ redirect_from:
   <section id="honors-and-awards" class="section">
     <div class="container">
       <h2 class="section-heading fade-in"><span class="section-num mono">04</span>Honors and Awards</h2>
-      <ul class="info-list fade-in">
-        <li class="info-card"><span class="info-date mono">2024.09</span><span>Comprehensive Excellence Award, Tsinghua University.</span></li>
-        <li class="info-card"><span class="info-date mono">2023.09</span><span>Comprehensive Excellence Award, Tsinghua University.</span></li>
-        <li class="info-card"><span class="info-date mono">2023.01</span><span>Third Prize in the Software Competition, Tsinghua University.</span></li>
-        <li class="info-card"><span class="info-date mono">2022.09</span><span>Sports Excellence Award, Tsinghua University.</span></li>
-        <li class="info-card"><span class="info-date mono">2022.07</span><span>Outstanding Admission Volunteer, Tsinghua University.</span></li>
-        <li class="info-card"><span class="info-date mono">2022.01</span><span>Third Prize in the Software Competition, Tsinghua University.</span></li>
-        <li class="info-card"><span class="info-date mono">2021.12</span><span>Second Prize Scholarship for Incoming Students, Tsinghua University.</span></li>
+      <ul class="awards-shelves fade-in">
+        <li class="award-shelf">
+          <span class="award-year mono">2024</span>
+          <ul class="award-list">
+            <li class="award-entry">
+              <span class="award-month mono">Sep</span>
+              <span class="award-detail">
+                <span class="award-title">Comprehensive Excellence Award <span class="award-rank">(Top 5%)</span></span>
+                <span class="award-org">Tsinghua University</span>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li class="award-shelf">
+          <span class="award-year mono">2023</span>
+          <ul class="award-list">
+            <li class="award-entry">
+              <span class="award-month mono">Sep</span>
+              <span class="award-detail">
+                <span class="award-title">Comprehensive Excellence Award <span class="award-rank">(Top 5%)</span></span>
+                <span class="award-org">Tsinghua University</span>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li class="award-shelf">
+          <span class="award-year mono">2021</span>
+          <ul class="award-list">
+            <li class="award-entry">
+              <span class="award-month mono">Dec</span>
+              <span class="award-detail">
+                <span class="award-title">Second Prize Scholarship for Incoming Students <span class="award-rank">(Top 5%)</span></span>
+                <span class="award-org">Tsinghua University</span>
+              </span>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   </section>
@@ -251,8 +280,31 @@ redirect_from:
   <section id="educations" class="section">
     <div class="container">
       <h2 class="section-heading fade-in"><span class="section-num mono">05</span>Educations</h2>
-      <ul class="info-list fade-in">
-        <li class="info-card"><span class="info-date mono">2021.09 - 2025.06</span><span>B.Eng., School of Software, Tsinghua University, Beijing, China.</span></li>
+      <ul class="education-list fade-in">
+        <li class="education-card">
+          <span class="education-logo" aria-hidden="true">
+            <img src="images/ntu-logo.png" alt="" onerror="this.style.display='none'">
+            <span class="education-logo-fallback mono">NTU</span>
+          </span>
+          <span class="education-content">
+            <span class="education-date mono">2026.08 - Present</span>
+            <span class="education-degree">Ph.D.</span>
+            <span class="education-school">College of Computing and Data Science, Nanyang Technological University</span>
+            <span class="education-location">Singapore</span>
+          </span>
+        </li>
+        <li class="education-card">
+          <span class="education-logo" aria-hidden="true">
+            <img src="images/thu-logo.png" alt="" onerror="this.style.display='none'">
+            <span class="education-logo-fallback mono">THU</span>
+          </span>
+          <span class="education-content">
+            <span class="education-date mono">2021.09 - 2025.06</span>
+            <span class="education-degree">B.Eng.</span>
+            <span class="education-school">School of Software, Tsinghua University</span>
+            <span class="education-location">Beijing, China</span>
+          </span>
+        </li>
       </ul>
     </div>
   </section>
@@ -260,29 +312,42 @@ redirect_from:
   <section id="internships" class="section">
     <div class="container">
       <h2 class="section-heading fade-in"><span class="section-num mono">06</span>Internships</h2>
-      <ul class="info-list fade-in">
-        <li class="info-card"><span class="info-date mono">2024.12 - 2025.06</span><span>Research Assistant, School of Software, Tsinghua University, supervised by <a href="https://yushen-liu.github.io/">Prof. Yu-Shen Liu</a>.</span></li>
-        <li class="info-card"><span class="info-date mono">2024.07 - 2025.02</span><span>Research Assistant, SAIR Lab, University at Buffalo, supervised by <a href="https://sairlab.org/chenw/">Prof. Chen Wang</a>.</span></li>
+      <ul class="internship-list fade-in">
+        <li class="internship-card">
+          <span class="internship-logo" aria-hidden="true">
+            <img src="images/bytedance-logo.png" alt="" onerror="this.style.display='none'">
+            <span class="internship-logo-fallback mono">BYTE</span>
+          </span>
+          <span class="internship-content">
+            <span class="internship-date mono">2026.07 - Present</span>
+            <span class="internship-role">Intern</span>
+            <span class="internship-place">ByteDance, USA</span>
+            <span class="internship-supervisor">Supervisor: <a href="https://tau-yihouxiang.github.io/">Dr. Tao Hu</a></span>
+          </span>
+        </li>
+        <li class="internship-card">
+          <span class="internship-logo" aria-hidden="true">
+            <img src="images/mmlab-logo.png" alt="" onerror="this.style.display='none'">
+            <span class="internship-logo-fallback mono">MMLAB</span>
+          </span>
+          <span class="internship-content">
+            <span class="internship-date mono">2025.09 - 2026.06</span>
+            <span class="internship-role">Research Assistant</span>
+            <span class="internship-place">MMLab@NTU, Singapore</span>
+            <span class="internship-supervisor">Supervisor: <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a></span>
+          </span>
+        </li>
       </ul>
     </div>
   </section>
 
-  <section id="misc" class="section">
-    <div class="container">
-      <h2 class="section-heading fade-in"><span class="section-num mono">07</span>Misc</h2>
-      <div class="misc-grid fade-in">
-        <div class="misc-card">I follow Formula 1 and root for Max Verstappen.</div>
-        <div class="misc-card">I enjoy working on personal websites, research demos, and small tools.</div>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer id="footer">
   <div class="container">
-    <div class="footer-quote">"To every thing there is a season, and a time to every purpose under heaven."</div>
+    <div class="footer-quote"><span class="footer-quote-text">"NO RISK, FULL PUSH." &mdash; Max Verstappen</span> <span class="footer-emoji" aria-hidden="true">🇳🇱🦁</span></div>
     <div class="footer-meta">
-      <span class="footer-updated mono">Last updated: <span id="last-updated"></span></span>
+      <span class="footer-view-count mono">Total views: <span id="flagcounter-total">Loading</span></span>
     </div>
   </div>
 </footer>
