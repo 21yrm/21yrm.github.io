@@ -347,8 +347,7 @@ redirect_from:
   <div class="container">
     <div class="footer-quote"><span class="footer-quote-text">"NO RISK, FULL PUSH." &mdash; Max Verstappen</span> <span class="footer-emoji" aria-hidden="true">🇳🇱🦁</span></div>
     <div class="footer-meta">
-      <span class="footer-view-count mono">Total views: <span id="flagcounter-total">Loading</span></span>
+      <span class="footer-view-count mono">Total views: <span id="goatcounter-total">Loading</span></span>
     </div>
-    <img class="flagcounter-pixel" src="https://s01.flagcounter.com/count/4jbg/bg_FFFFFF/txt_FFFFFF/border_FFFFFF/columns_1/maxflags_1/viewers_0/labels_0/pageviews_1/flags_0/" alt="" aria-hidden="true">
   </div>
 </footer>

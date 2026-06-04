@@ -126,30 +126,30 @@
       })();
     }
 
-    const flagcounterTotal = document.getElementById("flagcounter-total");
-    if (flagcounterTotal) {
-      const flagcounterSources = [
-        "https://cdn.jsdelivr.net/gh/21yrm/21yrm.github.io@flagcounter-stats/flagcounter.json",
-        "https://raw.githubusercontent.com/21yrm/21yrm.github.io/flagcounter-stats/flagcounter.json",
-        "{{ '/assets/data/flagcounter.json' | relative_url }}"
+    const goatcounterTotal = document.getElementById("goatcounter-total");
+    if (goatcounterTotal) {
+      const goatcounterSources = [
+        "https://cdn.jsdelivr.net/gh/21yrm/21yrm.github.io@goatcounter-stats/goatcounter.json",
+        "https://raw.githubusercontent.com/21yrm/21yrm.github.io/goatcounter-stats/goatcounter.json",
+        "{{ '/assets/data/goatcounter.json' | relative_url }}"
       ];
       (async () => {
-        for (const source of flagcounterSources) {
+        for (const source of goatcounterSources) {
           try {
             const response = await fetch(source, { cache: "no-store" });
             if (!response.ok) continue;
             const data = await response.json();
-            const totalViews = Number(data.total_views);
+            const totalViews = data.total_views;
             if (Number.isFinite(totalViews)) {
-              flagcounterTotal.textContent = totalViews.toLocaleString("en-US");
+              goatcounterTotal.textContent = totalViews.toLocaleString("en-US");
               break;
             }
           } catch (error) {
-            // FlagCounter stats are published by the scheduled GitHub Action.
+            // GoatCounter stats are published by the scheduled GitHub Action.
           }
         }
-        if (flagcounterTotal.textContent === "Loading") {
-          flagcounterTotal.textContent = "Updating";
+        if (goatcounterTotal.textContent === "Loading") {
+          goatcounterTotal.textContent = "Updating";
         }
       })();
     }
@@ -319,5 +319,8 @@
       });
     }
   </script>
+  {% if site.goatcounter_code %}
+  <script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  {% endif %}
 </body>
 </html>

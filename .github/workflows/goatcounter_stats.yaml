@@ -1,0 +1,41 @@
+name: Get GoatCounter Data
+
+on:
+  workflow_dispatch:
+  page_build:
+  schedule:
+    - cron: '20 8 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch GoatCounter data
+        run: python .github/scripts/fetch_goatcounter_stats.py
+        env:
+          GOATCOUNTER_CODE: ${{ vars.GOATCOUNTER_CODE }}
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+
+      - name: Publish GoatCounter data
+        run: |
+          mkdir -p goatcounter-results
+          cp assets/data/goatcounter.json goatcounter-results/goatcounter.json
+          cd goatcounter-results
+          git init
+          git config --local user.name "${GITHUB_ACTOR}"
+          git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git add goatcounter.json
+          git diff --cached --quiet && echo "No GoatCounter changes to publish." && exit 0
+          git commit -m "Updated GoatCounter Data"
+          git push "${remote_repo}" HEAD:goatcounter-stats --force

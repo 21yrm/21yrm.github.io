@@ -1600,18 +1600,9 @@ html.choiszt-page .footer-view-count:before {
     display: none;
 }
 
-html.choiszt-page #flagcounter-total {
+html.choiszt-page #goatcounter-total {
     color: inherit;
     font-weight: inherit;
-}
-
-html.choiszt-page .flagcounter-pixel {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    opacity: 0;
-    pointer-events: none;
 }
 
 html.choiszt-page .fade-in {
