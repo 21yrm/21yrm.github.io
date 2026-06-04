@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import importlib.util
+import json
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -35,6 +37,20 @@ class GoatCounterStatsTest(unittest.TestCase):
         module = load_module()
 
         self.assertEqual(module.extract_total_views({"total": 1234, "total_events": 12}), 1234)
+
+    def test_merge_legacy_offset_adds_previous_views(self):
+        module = load_module()
+
+        self.assertEqual(module.merge_legacy_offset(12), 2220)
+
+    def test_read_existing_total_recovers_goatcounter_views_from_final_total(self):
+        module = load_module()
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output = Path(tmpdir) / "goatcounter.json"
+            output.write_text(json.dumps({"total_views": 2220}), encoding="utf-8")
+
+            self.assertEqual(module.read_existing_total(output), 12)
 
     def test_extract_total_views_rejects_missing_total_field(self):
         module = load_module()
