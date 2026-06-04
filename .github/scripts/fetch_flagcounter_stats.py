@@ -26,9 +26,30 @@ def clean_text(document: str) -> str:
 def parse_total_views(document: str) -> int | None:
     text = clean_text(document)
     match = re.search(r"counter\s+has\s+been\s+viewed\s+([\d,]+)\s+times?", text, flags=re.IGNORECASE)
-    if not match:
-        return None
-    return int(match.group(1).replace(",", ""))
+    if match:
+        return int(match.group(1).replace(",", ""))
+
+    return parse_history_table_views(document)
+
+
+def parse_history_table_views(document: str) -> int | None:
+    rows = re.findall(r"(?is)<tr[^>]*>(.*?)</tr>", document)
+    total = 0
+    found_view_cells = False
+    for row in rows:
+        cells = re.findall(r"(?is)<td[^>]*>(.*?)</td>", row)
+        if len(cells) < 3:
+            continue
+        date_cell = clean_text(cells[0])
+        views_cell = clean_text(cells[2])
+        if not date_cell or "Flag Counter Views" in views_cell:
+            continue
+        match = re.search(r"([\d,]+)", views_cell)
+        if not match:
+            continue
+        found_view_cells = True
+        total += int(match.group(1).replace(",", ""))
+    return total if found_view_cells else None
 
 
 def fetch_document(url: str) -> str:
@@ -46,6 +67,17 @@ def write_json(output: Path, total_views: int | None, stats_url: str) -> None:
     }, indent=2) + "\n", encoding="utf-8")
 
 
+def read_existing_total(output: Path) -> int | None:
+    if not output.exists():
+        return None
+    try:
+        data = json.loads(output.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    total_views = data.get("total_views")
+    return total_views if isinstance(total_views, int) else None
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--counter-id", default=os.environ.get("FLAGCOUNTER_ID", DEFAULT_COUNTER_ID))
@@ -58,7 +90,10 @@ def main() -> int:
     document = args.input_html.read_text(encoding="utf-8") if args.input_html else fetch_document(stats_url)
     total_views = parse_total_views(document)
     if total_views is None:
-        raise SystemExit("Could not parse total FlagCounter views.")
+        total_views = read_existing_total(args.output)
+    if total_views is None:
+        total_views = 0
+        print("Could not parse total FlagCounter views; publishing 0 fallback.")
     write_json(args.output, total_views, stats_url)
     print(f"Fetched FlagCounter total views: {total_views}")
     return 0
