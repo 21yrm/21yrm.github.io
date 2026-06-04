@@ -9,13 +9,14 @@ import json
 import os
 import urllib.parse
 import urllib.request
+from urllib.error import HTTPError
 from pathlib import Path
 from typing import Any
 
 
 DEFAULT_CODE = "yaorunmao"
 DEFAULT_OUTPUT = Path("assets/data/goatcounter.json")
-DEFAULT_START = "2000-01-01T00:00:00Z"
+DEFAULT_START = "2026-06-01T00:00:00Z"
 
 
 def extract_total_views(data: dict[str, Any]) -> int | None:
@@ -38,8 +39,14 @@ def fetch_stats(url: str, token: str) -> dict[str, Any]:
             "User-Agent": "21yrm.github.io goatcounter updater",
         },
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except HTTPError as error:
+        body = error.read().decode("utf-8", errors="replace")
+        print(f"GoatCounter API request failed: {error.code} {error.reason} for {url}")
+        print(body[:1000])
+        raise
 
 
 def write_json(output: Path, total_views: int | None, stats_url: str) -> None:

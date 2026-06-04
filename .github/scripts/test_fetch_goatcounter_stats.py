@@ -26,6 +26,11 @@ class GoatCounterStatsTest(unittest.TestCase):
 
         self.assertEqual(module.DEFAULT_CODE, "yaorunmao")
 
+    def test_default_start_matches_goatcounter_launch_window(self):
+        module = load_module()
+
+        self.assertEqual(module.DEFAULT_START, "2026-06-01T00:00:00Z")
+
     def test_extract_total_views_reads_goatcounter_total_field(self):
         module = load_module()
 
