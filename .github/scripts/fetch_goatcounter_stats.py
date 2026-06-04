@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 
 
-DEFAULT_CODE = "21yrm"
+DEFAULT_CODE = "yaorunmao"
 DEFAULT_OUTPUT = Path("assets/data/goatcounter.json")
 DEFAULT_START = "2000-01-01T00:00:00Z"
 

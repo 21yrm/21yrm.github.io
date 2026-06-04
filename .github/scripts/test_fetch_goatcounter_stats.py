@@ -21,6 +21,11 @@ def load_module():
 
 
 class GoatCounterStatsTest(unittest.TestCase):
+    def test_default_code_matches_goatcounter_site(self):
+        module = load_module()
+
+        self.assertEqual(module.DEFAULT_CODE, "yaorunmao")
+
     def test_extract_total_views_reads_goatcounter_total_field(self):
         module = load_module()
 
