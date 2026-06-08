@@ -315,23 +315,11 @@ redirect_from:
       <ul class="internship-list fade-in">
         <li class="internship-card">
           <span class="internship-logo" aria-hidden="true">
-            <img src="images/bytedance-logo.png" alt="" onerror="this.style.display='none'">
-            <span class="internship-logo-fallback mono">BYTE</span>
-          </span>
-          <span class="internship-content">
-            <span class="internship-date mono">2026.07 - Present</span>
-            <span class="internship-role">Intern</span>
-            <span class="internship-place">ByteDance, USA</span>
-            <span class="internship-supervisor">Supervisor: <a href="https://tau-yihouxiang.github.io/">Dr. Tao Hu</a></span>
-          </span>
-        </li>
-        <li class="internship-card">
-          <span class="internship-logo" aria-hidden="true">
             <img src="images/mmlab-logo.png" alt="" onerror="this.style.display='none'">
             <span class="internship-logo-fallback mono">MMLAB</span>
           </span>
           <span class="internship-content">
-            <span class="internship-date mono">2025.09 - 2026.06</span>
+            <span class="internship-date mono">2025.09 - 2026.07</span>
             <span class="internship-role">Research Assistant</span>
             <span class="internship-place">MMLab@NTU, Singapore</span>
             <span class="internship-supervisor">Supervisor: <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a></span>
