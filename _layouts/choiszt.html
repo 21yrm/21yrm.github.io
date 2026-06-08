@@ -129,8 +129,8 @@
     const goatcounterTotal = document.getElementById("goatcounter-total");
     if (goatcounterTotal) {
       const goatcounterSources = [
-        "https://cdn.jsdelivr.net/gh/21yrm/21yrm.github.io@goatcounter-stats/goatcounter.json",
         "https://raw.githubusercontent.com/21yrm/21yrm.github.io/goatcounter-stats/goatcounter.json",
+        "https://cdn.jsdelivr.net/gh/21yrm/21yrm.github.io@goatcounter-stats/goatcounter.json",
         "{{ '/assets/data/goatcounter.json' | relative_url }}"
       ];
       (async () => {
