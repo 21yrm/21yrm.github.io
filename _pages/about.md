@@ -159,7 +159,7 @@ redirect_from:
           </div>
           <div class="pub-info">
             <h3 class="pub-title">SpatialBench: Is Your Spatial Foundation Model an All-Round Player?</h3>
-            <p class="pub-authors">Haosong Peng, Hao Li, Jiaqi Chen, Yuhao Pan, <strong>Runmao Yao</strong>, Yalun Dai, Fushuo Huo, Fangzhou Hong, Zhaoxi Chen, Haozhao Wang, Dingwen Zhang, Ziwei Liu, Wenchao Xu</p>
+            <p class="pub-authors">Haosong Peng*, Hao Li*, Jiaqi Chen*, Yuhao Pan*, <strong>Runmao Yao</strong>, Yalun Dai, Fushuo Huo, Fangzhou Hong, Zhaoxi Chen, Haozhao Wang, Dingwen Zhang, Ziwei Liu, Wenchao Xu</p>
             <div class="pub-links">
               <a href="https://arxiv.org/abs/2605.27367">Paper</a>
               <a href="https://github.com/Ropedia/SpatialBench">Code</a>
