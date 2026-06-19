@@ -98,6 +98,10 @@ redirect_from:
                 <h3 class="news-year mono">2026</h3>
                 <ul class="news-list">
                   <li class="news-item">
+                    <span class="news-date mono">Jun 18</span>
+                    <span class="news-text"><a href="https://arxiv.org/abs/2606.20515">S-Agent</a> is out &mdash; a spatial tool-use agent for continuous multi-view image and video reasoning.</span>
+                  </li>
+                  <li class="news-item">
                     <span class="news-date mono">May 26</span>
                     <span class="news-text"><a href="https://arxiv.org/abs/2605.27367">SpatialBench</a> is out &mdash; a cross-paradigm benchmark for evaluating spatial foundation models.</span>
                   </li>
@@ -152,6 +156,22 @@ redirect_from:
     <div class="container">
       <h2 class="section-heading fade-in"><span class="section-num mono">03</span>Selected Publications <a href="https://scholar.google.com/citations?user=3yhvF6UAAAAJ&amp;hl=en" class="citation-badge mono"><span class="citation-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></span><span id="citation-count">Citations</span></a></h2>
       <div id="pub-masonry" class="pub-container fade-in">
+        <article class="pub-card">
+          <div class="pub-thumb">
+            <img src="images/S-Agent.jpg" alt="S-Agent" loading="lazy">
+            <span class="pub-badge">arXiv 2026</span>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence</h3>
+            <p class="pub-authors">Yalun Dai, Hao Li, Shulin Tian, <strong>Runmao Yao</strong>, Yuhao Dong, Fangzhou Hong, Zhaoxi Chen, Fangfu Liu, Baoliang Tian, Dingwen Zhang, Tao Wang, Kim-Hui Yap, Ziwei Liu</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2606.20515">Paper</a>
+              <a href="https://github.com/Ropedia/S-Agent/">Code</a>
+              <a href="https://Ropedia.github.io/S-Agent">Project</a>
+            </div>
+          </div>
+        </article>
+
         <article class="pub-card">
           <div class="pub-thumb">
             <img src="images/SpatialBench.png" alt="SpatialBench" loading="lazy">
