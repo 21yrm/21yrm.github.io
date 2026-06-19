@@ -163,7 +163,7 @@ redirect_from:
           </div>
           <div class="pub-info">
             <h3 class="pub-title">S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence</h3>
-            <p class="pub-authors">Yalun Dai, Hao Li, Shulin Tian, <strong>Runmao Yao</strong>, Yuhao Dong, Fangzhou Hong, Zhaoxi Chen, Fangfu Liu, Baoliang Tian, Dingwen Zhang, Tao Wang, Kim-Hui Yap, Ziwei Liu</p>
+            <p class="pub-authors">Yalun Dai*, Hao Li*, Shulin Tian, <strong>Runmao Yao</strong>, Yuhao Dong, Fangzhou Hong, Zhaoxi Chen, Fangfu Liu, Baoliang Tian, Dingwen Zhang, Tao Wang, Kim-Hui Yap, Ziwei Liu</p>
             <div class="pub-links">
               <a href="https://arxiv.org/abs/2606.20515">Paper</a>
               <a href="https://github.com/Ropedia/S-Agent/">Code</a>
