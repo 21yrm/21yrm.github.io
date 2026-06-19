@@ -158,7 +158,7 @@ redirect_from:
       <div id="pub-masonry" class="pub-container fade-in">
         <article class="pub-card">
           <div class="pub-thumb">
-            <img src="images/S-Agent.jpg" alt="S-Agent" loading="lazy">
+            <img src="images/S-Agent.png" alt="S-Agent" loading="lazy">
             <span class="pub-badge">arXiv 2026</span>
           </div>
           <div class="pub-info">
