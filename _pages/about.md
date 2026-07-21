@@ -97,7 +97,7 @@ redirect_from:
               <div class="news-year-group">
                 <h3 class="news-year mono">2026</h3>
                 <ul class="news-list">
-                  <li class="news-item">
+                  <li class="news-item highlight">
                     <span class="news-date mono">Jul 17</span>
                     <span class="news-text"><a href="https://arxiv.org/abs/2607.16401">Apple-π</a> is out &mdash; the first benchmark for evaluating law-grounded physical reasoning in video models.</span>
                   </li>
