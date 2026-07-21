@@ -52,13 +52,12 @@ Do not change its date, copy, or arXiv link.
 Run:
 
 ```bash
-test "$(rg -c 'class="news-item highlight"' _pages/about.md)" -eq 2
-rg -U '<li class="news-item highlight">\n[[:space:]]*<span class="news-date mono">Jul 17</span>' _pages/about.md
-rg -U '<li class="news-item highlight">\n[[:space:]]*<span class="news-date mono">Jan 23</span>' _pages/about.md
+test "$(rg -U -c '<li class="news-item highlight">\n[[:space:]]*<span class="news-date mono">Jul 17</span>' _pages/about.md)" -eq 1
+test "$(rg -U -c '<li class="news-item highlight">\n[[:space:]]*<span class="news-date mono">Jan 23</span>' _pages/about.md)" -eq 1
 test "$(rg -c '2607\.16401' _pages/about.md)" -eq 2
 ```
 
-Expected: all commands exit successfully; Apple-π and AnchoredDream are the two highlighted entries.
+Expected: all commands exit successfully; Apple-π and AnchoredDream each appear exactly once with the highlight state. Other existing highlighted News entries remain unchanged.
 
 - [ ] **Step 4: Build and verify generated output**
 
@@ -66,11 +65,12 @@ Run:
 
 ```bash
 BUNDLE_FORCE_RUBY_PLATFORM=true BUNDLE_PATH=/private/tmp/21yrm-bundle-native bundle exec jekyll build
-test "$(rg -c 'class="news-item highlight"' _site/index.html)" -eq 2
+test "$(rg -U -c '<li class="news-item highlight">\n[[:space:]]*<span class="news-date mono">Jul 17</span>' _site/index.html)" -eq 1
+test "$(rg -U -c '<li class="news-item highlight">\n[[:space:]]*<span class="news-date mono">Jan 23</span>' _site/index.html)" -eq 1
 git diff --check
 ```
 
-Expected: Jekyll exits successfully, generated HTML contains exactly two highlighted News entries, and no whitespace errors are reported.
+Expected: Jekyll exits successfully, generated HTML contains one highlighted Apple-π entry and one highlighted AnchoredDream entry, and no whitespace errors are reported.
 
 - [ ] **Step 5: Commit**
 
@@ -82,4 +82,3 @@ git commit -m "Highlight Apple-PI news item"
 ```
 
 Expected: one commit changing a single HTML class.
-
