@@ -35,10 +35,13 @@ Insert a new publication card before S-Agent with:
 
 Reuse the existing publication-card markup and styles without introducing Apple-PI-specific CSS. Preserve the uploaded PNG as-is so the card uses the same responsive image behavior, masonry layout, hover treatment, and mobile breakpoints as the other publications.
 
+The Apple-π News item must also use the existing `highlight` state already applied to AnchoredDream. Both entries remain highlighted. Apple-π therefore inherits the bold accent-colored date, animated glowing timeline dot, and stronger text color without adding new CSS or JavaScript.
+
 ## Validation
 
 - Build the Jekyll site locally.
 - Confirm the new News item is first in the 2026 list.
+- Confirm both the Apple-π and AnchoredDream News items have the `highlight` class.
 - Confirm the new publication card is first in Selected Publications.
 - Confirm the image resolves and has meaningful alt text.
 - Confirm both equal-contribution asterisks are present and only Runmao Yao's name is bold.
