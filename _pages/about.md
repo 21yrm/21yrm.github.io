@@ -98,6 +98,10 @@ redirect_from:
                 <h3 class="news-year mono">2026</h3>
                 <ul class="news-list">
                   <li class="news-item">
+                    <span class="news-date mono">Jul 17</span>
+                    <span class="news-text"><a href="https://arxiv.org/abs/2607.16401">Apple-π</a> is out &mdash; the first benchmark for evaluating law-grounded physical reasoning in video models.</span>
+                  </li>
+                  <li class="news-item">
                     <span class="news-date mono">Jun 18</span>
                     <span class="news-text"><a href="https://arxiv.org/abs/2606.20515">S-Agent</a> is out &mdash; a spatial tool-use agent for continuous multi-view image and video reasoning.</span>
                   </li>
@@ -156,6 +160,22 @@ redirect_from:
     <div class="container">
       <h2 class="section-heading fade-in"><span class="section-num mono">03</span>Selected Publications <a href="https://scholar.google.com/citations?user=3yhvF6UAAAAJ&amp;hl=en" class="citation-badge mono"><span class="citation-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></span><span id="citation-count">Citations</span></a></h2>
       <div id="pub-masonry" class="pub-container fade-in">
+        <article class="pub-card">
+          <div class="pub-thumb">
+            <img src="images/Apple-PI.png" alt="Apple-π" loading="lazy">
+            <span class="pub-badge">arXiv 2026</span>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">Apple-π: Benchmarking Thinking with Video Towards Law-Grounded Physical Intelligence</h3>
+            <p class="pub-authors"><strong>Runmao Yao*</strong>, Kairui Hu*, Yukang Cao, Ruisi Wang, Shulin Tian, Ziang Cao, Weichen Fan, Ziqi Huang, Yuhao Dong, Hao Li, Zhaoxi Chen, Zhongang Cai, Lei Yang, Ziwei Liu</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2607.16401">Paper</a>
+              <a href="https://github.com/21yrm/Apple-PI">Code</a>
+              <a href="https://21yrm.github.io/Apple-PI-homepage/">Project</a>
+            </div>
+          </div>
+        </article>
+
         <article class="pub-card">
           <div class="pub-thumb">
             <img src="images/S-Agent.png" alt="S-Agent" loading="lazy">
