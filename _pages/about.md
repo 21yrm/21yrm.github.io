@@ -97,7 +97,7 @@ redirect_from:
               <div class="news-year-group">
                 <h3 class="news-year mono">2026</h3>
                 <ul class="news-list">
-                  <li class="news-item highlight">
+                  <li class="news-item">
                     <span class="news-date mono">Jul 30</span>
                     <span class="news-text"><a href="https://arxiv.org/abs/2607.28625">ACE-Data-0</a> is out &mdash; a large-scale, long-horizon, multimodal dataset for household human-object and human-scene interactions.</span>
                   </li>

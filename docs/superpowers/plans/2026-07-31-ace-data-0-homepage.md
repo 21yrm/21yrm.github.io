@@ -29,8 +29,8 @@
 - Modify: `_pages/about.md:37-169`
 
 **Interfaces:**
-- Consumes: the existing `.tag`, `.news-item.highlight`, `.pub-card`, `.pub-thumb`, `.pub-authors`, and `.pub-links` markup contracts.
-- Produces: updated research-interest copy, a highlighted top-of-list News entry, and a top-of-list publication card rendered by the existing page layout.
+- Consumes: the existing `.tag`, `.news-item`, `.pub-card`, `.pub-thumb`, `.pub-authors`, and `.pub-links` markup contracts.
+- Produces: updated research-interest copy, a regular top-of-list News entry, and a top-of-list publication card rendered by the existing page layout.
 
 - [ ] **Step 1: Run the acceptance assertions and verify they fail**
 
@@ -74,12 +74,12 @@ Replace the research-highlight paragraph with:
 <p class="research-highlight">My research lies in <strong>physical AI</strong>, <strong>embodied AI</strong>, and <strong>world models</strong>.</p>
 ```
 
-- [ ] **Step 4: Add the highlighted News item**
+- [ ] **Step 4: Add the regular News item**
 
 Insert this item before Apple-π in the 2026 News list:
 
 ```html
-<li class="news-item highlight">
+<li class="news-item">
   <span class="news-date mono">Jul 30</span>
   <span class="news-text"><a href="https://arxiv.org/abs/2607.28625">ACE-Data-0</a> is out &mdash; a large-scale, long-horizon, multimodal dataset for household human-object and human-scene interactions.</span>
 </li>

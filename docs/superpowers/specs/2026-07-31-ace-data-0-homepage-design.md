@@ -14,7 +14,7 @@ and citation-count behavior remain unchanged.
 
 ## News
 
-Add a highlighted item at the top of the 2026 news list:
+Add a regular, non-highlighted item at the top of the 2026 news list:
 
 - Date: `Jul 30`
 - Link: `https://arxiv.org/abs/2607.28625`
