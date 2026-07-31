@@ -32,7 +32,7 @@ Change the section heading from `03 Selected Publications` to
 
 Insert a new publication card before Apple-π with:
 
-- Badge: `arXiv 2026`
+- Badge: `Technical Report`
 - Title: `ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine`
 - Authors, in full and in paper order:
   `Yukang Cao*`, `Haozhe Xie*`, `Beichen Wen*`, **`Runmao Yao`**,

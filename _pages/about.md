@@ -36,9 +36,9 @@ redirect_from:
         <h1 class="hero-name fade-in">Runmao Yao</h1>
         <p class="hero-role fade-in">Incoming PhD Student at <a href="https://www.mmlab-ntu.com/index.html">MMLab@NTU</a></p>
         <div class="hero-tags fade-in">
-          <span class="tag">Video Generation</span>
-          <span class="tag">World Models</span>
           <span class="tag">Physical AI</span>
+          <span class="tag">Embodied AI</span>
+          <span class="tag">World Models</span>
         </div>
         <div class="hero-contact fade-in">
           <a href="mailto:yaorunmao@gmail.com" class="hero-email mono">yaorunmao@gmail.com</a>
@@ -74,7 +74,7 @@ redirect_from:
       <div class="about-content fade-in">
         <p>I am an Incoming PhD Student at <a href="https://www.mmlab-ntu.com/index.html">MMLab@NTU</a>, supervised by <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a>. I received my Bachelor of Engineering degree from the School of Software, Tsinghua University.</p>
         <p>During my undergraduate studies, I was fortunate to work with <a href="https://yushen-liu.github.io/">Prof. Yu-Shen Liu</a> and <a href="https://sairlab.org/chenw/">Prof. Chen Wang</a>, whose guidance has shaped my academic journey.</p>
-        <p class="research-highlight">My research lies in <strong>video generation</strong>, <strong>world models</strong>, and <strong>physical AI</strong>.</p>
+        <p class="research-highlight">My research lies in <strong>physical AI</strong>, <strong>embodied AI</strong>, and <strong>world models</strong>.</p>
         <p class="cta">Feel free to reach out for collaborations, questions, or just to chat!</p>
       </div>
     </div>
@@ -97,6 +97,10 @@ redirect_from:
               <div class="news-year-group">
                 <h3 class="news-year mono">2026</h3>
                 <ul class="news-list">
+                  <li class="news-item highlight">
+                    <span class="news-date mono">Jul 30</span>
+                    <span class="news-text"><a href="https://arxiv.org/abs/2607.28625">ACE-Data-0</a> is out &mdash; a large-scale, long-horizon, multimodal dataset for household human-object and human-scene interactions.</span>
+                  </li>
                   <li class="news-item highlight">
                     <span class="news-date mono">Jul 17</span>
                     <span class="news-text"><a href="https://arxiv.org/abs/2607.16401">Apple-π</a> is out &mdash; the first benchmark for evaluating law-grounded physical reasoning in video models.</span>
@@ -158,8 +162,24 @@ redirect_from:
 
   <section id="publications" class="section">
     <div class="container">
-      <h2 class="section-heading fade-in"><span class="section-num mono">03</span>Selected Publications <a href="https://scholar.google.com/citations?user=3yhvF6UAAAAJ&amp;hl=en" class="citation-badge mono"><span class="citation-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></span><span id="citation-count">Citations</span></a></h2>
+      <h2 class="section-heading fade-in"><span class="section-num mono">03</span>Publications <a href="https://scholar.google.com/citations?user=3yhvF6UAAAAJ&amp;hl=en" class="citation-badge mono"><span class="citation-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></span><span id="citation-count">Citations</span></a></h2>
       <div id="pub-masonry" class="pub-container fade-in">
+        <article class="pub-card">
+          <div class="pub-thumb">
+            <img src="images/ACE-Data-0.webp" alt="ACE-Data-0" loading="lazy">
+            <span class="pub-badge">Technical Report</span>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine</h3>
+            <p class="pub-authors">Yukang Cao*, Haozhe Xie*, Beichen Wen*, <strong>Runmao Yao</strong>, Yinghao Liu, Yue Huang, Zhichao Liao, Yunxiang Wang, Haiheng Liu, Xingshun Tian, Dawei Su, Long Zhuo, Dacheng Tao, Xiaogang Wang, Liang Pan, Ziwei Liu</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2607.28625">Paper</a>
+              <a href="https://huggingface.co/datasets/ACERobotics/ACE-Data-0">Dataset</a>
+              <a href="https://ace-data-engine.github.io/ACE-Data-0/">Project</a>
+            </div>
+          </div>
+        </article>
+
         <article class="pub-card">
           <div class="pub-thumb">
             <img src="images/Apple-PI.png" alt="Apple-π" loading="lazy">
