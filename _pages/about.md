@@ -34,7 +34,7 @@ redirect_from:
       <div class="hero-container">
         <p class="hero-greeting mono fade-in">Hello, I'm</p>
         <h1 class="hero-name fade-in">Runmao Yao</h1>
-        <p class="hero-role fade-in">Incoming PhD Student at <a href="https://www.mmlab-ntu.com/index.html">MMLab@NTU</a></p>
+        <p class="hero-role fade-in">PhD Student at <a href="https://www.mmlab-ntu.com/index.html">MMLab@NTU</a></p>
         <div class="hero-tags fade-in">
           <span class="tag">Physical AI</span>
           <span class="tag">Embodied AI</span>
@@ -72,7 +72,7 @@ redirect_from:
     <div class="container">
       <h2 class="section-heading fade-in"><span class="section-num mono">01</span>About</h2>
       <div class="about-content fade-in">
-        <p>I am an Incoming PhD Student at <a href="https://www.mmlab-ntu.com/index.html">MMLab@NTU</a>, supervised by <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a>. I received my Bachelor of Engineering degree from the School of Software, Tsinghua University.</p>
+        <p>I am a PhD Student at <a href="https://www.mmlab-ntu.com/index.html">MMLab@NTU</a>, supervised by <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a>. I received my Bachelor of Engineering degree from the School of Software, Tsinghua University.</p>
         <p>During my undergraduate studies, I was fortunate to work with <a href="https://yushen-liu.github.io/">Prof. Yu-Shen Liu</a> and <a href="https://sairlab.org/chenw/">Prof. Chen Wang</a>, whose guidance has shaped my academic journey.</p>
         <p class="research-highlight">My research lies in <strong>physical AI</strong>, <strong>embodied AI</strong>, and <strong>world models</strong>.</p>
         <p class="cta">Feel free to reach out for collaborations, questions, or just to chat!</p>
