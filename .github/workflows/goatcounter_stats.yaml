@@ -21,12 +21,19 @@ jobs:
           python-version: '3.11'
 
       - name: Fetch GoatCounter data
+        id: fetch
+        continue-on-error: true
         run: python .github/scripts/fetch_goatcounter_stats.py
         env:
           GOATCOUNTER_CODE: ${{ vars.GOATCOUNTER_CODE }}
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
 
+      - name: Report GoatCounter fetch warning
+        if: steps.fetch.outcome == 'failure'
+        run: echo "::warning::GoatCounter API request failed; keeping the previously published stats."
+
       - name: Publish GoatCounter data
+        if: steps.fetch.outcome == 'success'
         run: |
           mkdir -p goatcounter-results
           cp assets/data/goatcounter.json goatcounter-results/goatcounter.json
