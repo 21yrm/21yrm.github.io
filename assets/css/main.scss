@@ -1504,6 +1504,10 @@ html.choiszt-page .internship-logo img {
     object-fit: contain;
 }
 
+html.choiszt-page .internship-logo img.pico-logo {
+    transform: translateY(-2px);
+}
+
 html.choiszt-page .education-logo-fallback,
 html.choiszt-page .internship-logo-fallback {
     position: absolute;

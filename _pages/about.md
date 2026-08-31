@@ -395,7 +395,7 @@ redirect_from:
       <ul class="internship-list fade-in">
         <li class="internship-card">
           <span class="internship-logo" aria-hidden="true">
-            <img src="images/pico.jpeg" alt="" onerror="this.style.display='none'">
+            <img class="pico-logo" src="images/pico.jpeg" alt="" onerror="this.style.display='none'">
             <span class="internship-logo-fallback mono">PICO</span>
           </span>
           <span class="internship-content">
