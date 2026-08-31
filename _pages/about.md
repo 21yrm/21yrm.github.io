@@ -20,7 +20,7 @@ redirect_from:
       <a href="#publications" data-label="Publications">Publications</a>
       <a href="#honors-and-awards" data-label="Honors and Awards">Honors and Awards</a>
       <a href="#educations" data-label="Educations">Educations</a>
-      <a href="#internships" data-label="Internships">Internships</a>
+      <a href="#internships" data-label="Experiences">Experiences</a>
     </div>
   </div>
 </nav>
@@ -391,8 +391,19 @@ redirect_from:
 
   <section id="internships" class="section">
     <div class="container">
-      <h2 class="section-heading fade-in"><span class="section-num mono">06</span>Internships</h2>
+      <h2 class="section-heading fade-in"><span class="section-num mono">06</span>Experiences</h2>
       <ul class="internship-list fade-in">
+        <li class="internship-card">
+          <span class="internship-logo" aria-hidden="true">
+            <img src="images/pico.jpeg" alt="" onerror="this.style.display='none'">
+            <span class="internship-logo-fallback mono">PICO</span>
+          </span>
+          <span class="internship-content">
+            <span class="internship-date mono">2026.08 - Present</span>
+            <span class="internship-role">Research Collaborator</span>
+            <span class="internship-place">ByteDance PICO, Beijing, China</span>
+          </span>
+        </li>
         <li class="internship-card">
           <span class="internship-logo" aria-hidden="true">
             <img src="images/mmlab-logo.png" alt="" onerror="this.style.display='none'">
@@ -402,7 +413,6 @@ redirect_from:
             <span class="internship-date mono">2025.09 - 2026.07</span>
             <span class="internship-role">Research Assistant</span>
             <span class="internship-place">MMLab@NTU, Singapore</span>
-            <span class="internship-supervisor">Supervisor: <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a></span>
           </span>
         </li>
       </ul>
