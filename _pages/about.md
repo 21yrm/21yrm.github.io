@@ -38,7 +38,6 @@ redirect_from:
         <div class="hero-tags fade-in">
           <span class="tag">Physical AI</span>
           <span class="tag">Embodied AI</span>
-          <span class="tag">World Models</span>
         </div>
         <div class="hero-contact fade-in">
           <a href="mailto:yaorunmao@gmail.com" class="hero-email mono">yaorunmao@gmail.com</a>
@@ -46,6 +45,9 @@ redirect_from:
         <div class="hero-social fade-in">
           <a href="https://scholar.google.com/citations?user=3yhvF6UAAAAJ&amp;hl=en" aria-label="Google Scholar">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+          </a>
+          <a href="https://www.alphaxiv.org/@runmao-yao" aria-label="alphaXiv" title="alphaXiv">
+            <img src="https://static.alphaxiv.org/logos/alphaxiv_logo.png" width="20" height="20" alt="" loading="lazy">
           </a>
           <a href="https://github.com/21yrm" aria-label="GitHub">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -74,7 +76,7 @@ redirect_from:
       <div class="about-content fade-in">
         <p>I am a PhD Student at <a href="https://www.mmlab-ntu.com/index.html">MMLab@NTU</a>, supervised by <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a>. I received my Bachelor of Engineering degree from the School of Software, Tsinghua University.</p>
         <p>During my undergraduate studies, I was fortunate to work with <a href="https://yushen-liu.github.io/">Prof. Yu-Shen Liu</a> and <a href="https://sairlab.org/chenw/">Prof. Chen Wang</a>, whose guidance has shaped my academic journey.</p>
-        <p class="research-highlight">My research lies in <strong>physical AI</strong>, <strong>embodied AI</strong>, and <strong>world models</strong>.</p>
+        <p class="research-highlight">My research lies in <strong>Physical AI</strong> and <strong>Embodied AI</strong>.</p>
         <p class="cta">Feel free to reach out for collaborations, questions, or just to chat!</p>
       </div>
     </div>
