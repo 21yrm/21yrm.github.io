@@ -100,6 +100,10 @@ redirect_from:
                 <h3 class="news-year mono">2026</h3>
                 <ul class="news-list">
                   <li class="news-item">
+                    <span class="news-date mono">Sep 30</span>
+                    <span class="news-text"><a href="https://ropedia.github.io/egotools/">EgoTools</a> is out &mdash; a 100-hour egocentric dataset and diagnostic benchmark for tool-centric reasoning in real-world videos.</span>
+                  </li>
+                  <li class="news-item">
                     <span class="news-date mono">Aug 27</span>
                     <span class="news-text"><a href="https://mirros.ai/report/code-as-world.pdf">Code as Worlds</a> is out &mdash; introducing executable world representations for grounded physical reasoning.</span>
                   </li>
@@ -170,6 +174,22 @@ redirect_from:
     <div class="container">
       <h2 class="section-heading fade-in"><span class="section-num mono">03</span>Publications <a href="https://scholar.google.com/citations?user=3yhvF6UAAAAJ&amp;hl=en" class="citation-badge mono"><span class="citation-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></span><span id="citation-count">Citations</span></a></h2>
       <div id="pub-masonry" class="pub-container fade-in">
+        <article class="pub-card">
+          <div class="pub-thumb">
+            <img src="images/EgoTools.webp" alt="EgoTools: tool-centric narration and annotation examples" loading="lazy">
+            <span class="pub-badge">EMNLP 2026</span>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos</h3>
+            <p class="pub-authors">Shulin Tian*, Junsu Kim*, Shuai Liu*, Hao Li*, Yujiao Shen, Sihan Li, Zhe Yang, Yeongon Kim, Feiyu Li, Jialin Wu, Yichi Zhang, Wenhui Wang, <strong>Runmao Yao</strong>, Yuhao Dong, Zhaoxi Chen, Fangzhou Hong, Antonino Furnari, Jingkang Yang, Hongyuan Zhu, Ziwei Liu</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2609.39378">Paper</a>
+              <a href="https://github.com/Ropedia/EgoTools">Code</a>
+              <a href="https://ropedia.github.io/egotools/">Project</a>
+            </div>
+          </div>
+        </article>
+
         <article class="pub-card">
           <div class="pub-thumb">
             <img src="images/Code-as-World.png" alt="Code as Worlds" loading="lazy">
