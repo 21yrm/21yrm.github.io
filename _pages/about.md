@@ -176,7 +176,7 @@ redirect_from:
       <div id="pub-masonry" class="pub-container fade-in">
         <article class="pub-card">
           <div class="pub-thumb">
-            <img src="images/EgoTools.webp" alt="EgoTools: tool-centric narration and annotation examples" loading="lazy">
+            <img src="images/EgoTools-teaser.png" alt="EgoTools teaser: dataset overview, annotations, and tool-use reasoning benchmark" loading="lazy">
             <span class="pub-badge">EMNLP 2026</span>
           </div>
           <div class="pub-info">
@@ -225,7 +225,7 @@ redirect_from:
         <article class="pub-card">
           <div class="pub-thumb">
             <img src="images/Apple-PI.png" alt="Apple-π" loading="lazy">
-            <span class="pub-badge">arXiv 2026</span>
+            <span class="pub-badge">NeurIPS 2026</span>
           </div>
           <div class="pub-info">
             <h3 class="pub-title">Apple-π: Benchmarking Thinking with Video Towards Law-Grounded Physical Intelligence</h3>
@@ -257,7 +257,7 @@ redirect_from:
         <article class="pub-card">
           <div class="pub-thumb">
             <img src="images/SpatialBench.png" alt="SpatialBench" loading="lazy">
-            <span class="pub-badge">arXiv 2026</span>
+            <span class="pub-badge">NeurIPS 2026</span>
           </div>
           <div class="pub-info">
             <h3 class="pub-title">SpatialBench: Is Your Spatial Foundation Model an All-Round Player?</h3>
