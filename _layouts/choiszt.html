@@ -30,7 +30,9 @@
             if (!response.ok) continue;
             const data = await response.json();
             if (Number.isFinite(data.citedby)) {
-              citationCount.textContent = `${data.citedby} citations`;
+              const formattedCitations = data.citedby.toLocaleString("en-US");
+              citationCount.textContent = formattedCitations;
+              citationCount.closest("a").setAttribute("aria-label", `${formattedCitations} citations on Google Scholar`);
               break;
             }
           } catch (error) {

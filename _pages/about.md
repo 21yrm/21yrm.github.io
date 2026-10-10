@@ -13,7 +13,17 @@ redirect_from:
 <div class="top-bar" aria-hidden="true"><div id="scroll-progress"></div></div>
 <nav id="nav" aria-label="Main navigation">
   <div class="nav-inner">
-    <a class="nav-logo" href="#hero" aria-label="Runmao Yao — home"><span class="identity-mark" aria-hidden="true">✳</span> Runmao Yao<span class="logo-period">.</span></a>
+    <a class="nav-logo" href="#hero" aria-label="Runmao Yao — home">
+      <svg class="identity-mark" width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+        <path d="M31.8 7.8C27.8 5.4 18.8 8.6 11.2 15.8S1.1 30.1 5.4 32.2 18.7 30.5 26.3 23.4C30.7 19.3 33.5 15.2 34.2 12" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" opacity=".55"/>
+        <path d="m20 9 9 5.2v10.4l-9 5.2-9-5.2V14.2Z" fill="var(--bg)"/>
+        <path d="m20 9 9 5.2-9 5.2-9-5.2Z" fill="currentColor" opacity=".2"/>
+        <path d="m20 19.4 9-5.2v10.4l-9 5.2Z" fill="currentColor" opacity=".07"/>
+        <path d="m20 9 9 5.2v10.4l-9 5.2-9-5.2V14.2Zm-9 5.2 9 5.2 9-5.2m-9 5.2v10.4" stroke="currentColor" stroke-width="1.45" stroke-linejoin="round"/>
+        <circle class="identity-node" cx="32" cy="8" r="2.3" fill="currentColor"/>
+      </svg>
+      Runmao Yao
+    </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu <span aria-hidden="true">＋</span></button>
     <div class="nav-links" id="nav-links">
       <a href="#about">About</a><a href="#news">News</a><a href="#publications">Research</a><a href="#honors-and-awards">Background</a>
@@ -28,7 +38,7 @@ redirect_from:
       <div class="hero-layout">
         <div class="hero-container">
           <p class="eyebrow">PHYSICAL AI &amp; EMBODIED AI</p>
-          <h1 class="hero-name">Runmao Yao<span>.</span></h1>
+          <h1 class="hero-name">Runmao Yao</h1>
           <p class="hero-statement">Understanding the<br><em>physical world.</em></p>
           <p class="hero-role">PhD Student at <a href="https://www.mmlab-ntu.com/index.html">MMLab@NTU</a><br>Advised by <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a></p>
         <div class="hero-social fade-in">
@@ -78,7 +88,7 @@ redirect_from:
         <p class="research-highlight">My research lies in <strong>Physical AI</strong> and <strong>Embodied AI</strong>.</p>
         <p class="cta">Feel free to reach out for collaborations, questions, or just to chat!</p>
 
-        <a class="text-link" href="mailto:yaorunmao@gmail.com">yaorunmao@gmail.com <span aria-hidden="true">↗</span></a>
+        <a class="about-email" href="mailto:yaorunmao@gmail.com"><span>yaorunmao@gmail.com</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/></svg></a>
       </div>
     </div>
   </section>
@@ -110,7 +120,13 @@ redirect_from:
   </section>
   <section id="publications" class="section">
     <div class="container">
-      <div class="section-header"><div><p class="eyebrow">03 / PUBLICATIONS</p><h2>Research in<br><em>perspective.</em></h2></div><a href="https://scholar.google.com/citations?user=3yhvF6UAAAAJ&amp;hl=en" class="citation-badge mono"><span id="citation-count">Google Scholar</span> <span aria-hidden="true">↗</span></a></div>
+      <div class="section-header">
+        <div><p class="eyebrow">03 / PUBLICATIONS</p><h2>Research in<br><em>perspective.</em></h2></div>
+        <a href="https://scholar.google.com/citations?user=3yhvF6UAAAAJ&amp;hl=en" class="citation-badge" aria-label="View citations on Google Scholar">
+          <span class="citation-content"><span class="citation-metric"><span id="citation-count">&mdash;</span><span class="citation-label">citations</span></span><span class="citation-source">Google Scholar</span></span>
+          <svg class="citation-arrow" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter"/></svg>
+        </a>
+      </div>
       <div class="pub-container">
 <article class="pub-card">
           <div class="pub-thumb">
