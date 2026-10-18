@@ -30,7 +30,6 @@
   const progress = document.getElementById("scroll-progress");
   const links = [...navigation.querySelectorAll('a[href^="#"]')];
   const sections = [...document.querySelectorAll("main > section[id]")];
-  const background = new Set(["honors-and-awards", "educations", "internships"]);
   let scrollPending = false;
   const updateScroll = () => {
     const distance = document.documentElement.scrollHeight - window.innerHeight;
@@ -39,7 +38,6 @@
     for (const section of sections) {
       if (section.getBoundingClientRect().top <= 180) current = section.id;
     }
-    if (background.has(current)) current = "honors-and-awards";
     links.forEach((link) => {
       const active = link.hash === `#${current}`;
       link.classList.toggle("active", active);
@@ -58,11 +56,55 @@
   window.addEventListener("resize", scheduleScroll, { passive: true });
   updateScroll();
 
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const revealTargets = [...document.querySelectorAll(
+    ".hero-name, .hero-social, .about-content, .portrait, .section-header, " +
+    ".news-item, .news-archive > summary, .pub-card, .background-title, " +
+    ".education-card, .internship-card"
+  )];
+  if (!reducedMotion.matches && "IntersectionObserver" in window && Element.prototype.animate) {
+    const animations = new Set();
+    const reveal = (element, delay = 0, animate = true) => {
+      if (!element.classList.contains("reveal-pending")) return;
+      element.classList.remove("reveal-pending");
+      observer.unobserve(element);
+      if (!animate) return;
+      const animation = element.animate([
+        { opacity: 0, transform: "translateY(22px)" },
+        { opacity: 1, transform: "translateY(0)" }
+      ], { duration: 1000, delay, easing: "cubic-bezier(.22, 1, .36, 1)", fill: "backwards" });
+      animations.add(animation);
+      animation.onfinish = () => animations.delete(animation);
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.filter((entry) => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+        .forEach((entry, index) => reveal(entry.target, Math.min(index, 3) * 110));
+    }, { threshold: 0, rootMargin: "0px 0px -24px 0px" });
+    revealTargets.forEach((element) => {
+      element.classList.add("reveal-pending");
+      observer.observe(element);
+    });
+    document.addEventListener("focusin", (event) => {
+      const element = event.target.closest(".reveal-pending");
+      if (element) reveal(element, 0, false);
+      animations.forEach((animation) => {
+        if (animation.effect.target.contains(event.target)) animation.finish();
+      });
+    });
+    reducedMotion.addEventListener("change", () => {
+      if (!reducedMotion.matches) return;
+      observer.disconnect();
+      revealTargets.forEach((element) => element.classList.remove("reveal-pending"));
+      animations.forEach((animation) => animation.cancel());
+      animations.clear();
+    });
+  }
+
   // A brief, local point-field reveal; it settles instead of running forever.
   const canvas = document.getElementById("research-field");
   const context = canvas?.getContext("2d");
   if (!context) return;
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   let width = 0;
   let height = 0;
   let frame = 0;
@@ -117,7 +159,7 @@
   const animate = (time) => {
     if (finished) return;
     if (!start) start = time;
-    const progress = Math.min((time - start) / 2200, 1);
+    const progress = Math.min((time - start) / 3400, 1);
     draw(1 - Math.pow(1 - progress, 3));
     if (progress < 1) frame = requestAnimationFrame(animate);
     else finished = true;
