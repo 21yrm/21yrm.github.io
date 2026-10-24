@@ -318,7 +318,7 @@ redirect_from:
             <span class="internship-logo-fallback mono" hidden>PICO</span>
           </span>
           <span class="internship-content">
-            <span class="internship-date mono">2026.08 - Present</span>
+            <span class="internship-date mono">2026.08 - 2026.10</span>
             <span class="internship-role">Research Collaborator</span>
             <span class="internship-place">ByteDance PICO, Beijing, China</span>
           </span>
