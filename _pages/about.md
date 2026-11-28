@@ -332,7 +332,7 @@ redirect_from:
           <ul class="internship-list fade-in">
         <li class="internship-card">
           <span class="internship-logo" aria-hidden="true">
-            <img src="https://avatars.githubusercontent.com/u/241894972?s=192&amp;v=4" alt="" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbIZe5085z0u6FJY5CoJTUaxmV26DSqEYQm7l78urUg&amp;s=10" style="max-width: 84px" alt="" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
             <span class="internship-logo-fallback mono" hidden>Ropedia</span>
           </span>
           <span class="internship-content">
