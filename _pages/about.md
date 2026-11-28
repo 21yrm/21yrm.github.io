@@ -85,12 +85,13 @@ redirect_from:
       <div class="section-header"><h2 class="section-title">News</h2></div>
       <div class="news-content">
         <ul class="news-list">
+            <li class="news-item"><span class="news-date mono">Nov 13, 2026</span><span class="news-text"><a href="https://ropedia.com/xperience/2-research/">Ropedia Xperience 2</a> is out &mdash; a dataset pairing first-person recordings of 74 tasks with metric 3D scans of the places where people performed them.</span></li>
             <li class="news-item"><span class="news-date mono">Sep 30, 2026</span><span class="news-text"><a href="https://ropedia.github.io/egotools/">EgoTools</a> is out &mdash; a 100-hour egocentric dataset and diagnostic benchmark for tool-centric reasoning in real-world videos.</span></li>
             <li class="news-item"><span class="news-date mono">Aug 27, 2026</span><span class="news-text"><a href="https://mirros.ai/report/code-as-world.pdf">Code as Worlds</a> is out &mdash; introducing executable world representations for grounded physical reasoning.</span></li>
             <li class="news-item"><span class="news-date mono">Aug 10, 2026</span><span class="news-text">Started my Ph.D. at <a href="https://www.mmlab-ntu.com/index.html">MMLab@NTU</a>, advised by <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a>.</span></li>
-            <li class="news-item"><span class="news-date mono">Jul 30, 2026</span><span class="news-text"><a href="https://arxiv.org/abs/2607.28625">ACE-Data-0</a> is out &mdash; a large-scale, long-horizon, multimodal dataset for household human-object and human-scene interactions.</span></li>
         </ul>
         <details class="news-archive"><summary><span>Earlier updates</span><span class="details-icon" aria-hidden="true">＋</span></summary><ul class="news-list">
+            <li class="news-item"><span class="news-date mono">Jul 30, 2026</span><span class="news-text"><a href="https://arxiv.org/abs/2607.28625">ACE-Data-0</a> is out &mdash; a large-scale, long-horizon, multimodal dataset for household human-object and human-scene interactions.</span></li>
             <li class="news-item"><span class="news-date mono">Jul 17, 2026</span><span class="news-text"><a class="first-author-paper" href="https://arxiv.org/abs/2607.16401">Apple-π</a> is out &mdash; the first benchmark for evaluating law-grounded physical reasoning in video models.</span></li>
             <li class="news-item"><span class="news-date mono">Jun 18, 2026</span><span class="news-text"><a href="https://arxiv.org/abs/2606.20515">S-Agent</a> is out &mdash; a spatial tool-use agent for continuous multi-view image and video reasoning.</span></li>
             <li class="news-item"><span class="news-date mono">May 26, 2026</span><span class="news-text"><a href="https://arxiv.org/abs/2605.27367">SpatialBench</a> is out &mdash; a cross-paradigm benchmark for evaluating spatial foundation models.</span></li>
@@ -116,6 +117,23 @@ redirect_from:
         </a>
       </div>
       <div class="pub-container">
+<article class="pub-card">
+          <div class="pub-thumb">
+            <img src="https://raw.githubusercontent.com/Ropedia/Ropedia-Xperience-2/main/assets/overview.jpg" alt="Ropedia Xperience 2 overview showing 3D scene scans, first-person recordings, and robot learning applications" loading="lazy">
+          </div>
+          <div class="pub-info">
+            <div class="pub-meta"><span class="pub-badge technical-report">Technical Report</span></div>
+            <h3 class="pub-title">Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors</h3>
+            <p class="pub-authors">Hao Li, Fangzhou Hong, Zhaoxi Chen, Hui En Pang, Kairui Hu, Mingze Sun, <strong>Runmao Yao</strong>, Xinhao Ji, Xiyuan Zheng, Xuanli Chen, Yalun Dai, Yap Kim Hui, Dingwen Zhang, Yuanyuan Gao, Ziang Cao, Cheng Huang Yean, Jackson Peng, Yichen Zhao, Rui Duan, Yaobo Liu, Zetong Wang, Ziwei Liu</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2611.17060">Paper</a>
+              <a href="https://github.com/Ropedia/Ropedia-Xperience-2">Code</a>
+              <a href="https://huggingface.co/datasets/ropedia-ai/Ropedia-Xperience-2">Dataset</a>
+              <a href="https://ropedia.com/xperience/2-research/">Project</a>
+            </div>
+          </div>
+        </article>
+
 <article class="pub-card">
           <div class="pub-thumb">
             <img src="images/EgoTools-teaser.png" alt="EgoTools teaser: dataset overview, annotations, and tool-use reasoning benchmark" loading="lazy">
@@ -312,6 +330,17 @@ redirect_from:
         <section id="internships" class="background-group" aria-labelledby="experience-title">
           <h3 class="background-title" id="experience-title">Experience</h3>
           <ul class="internship-list fade-in">
+        <li class="internship-card">
+          <span class="internship-logo" aria-hidden="true">
+            <img src="https://avatars.githubusercontent.com/u/241894972?s=192&amp;v=4" alt="" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+            <span class="internship-logo-fallback mono" hidden>Ropedia</span>
+          </span>
+          <span class="internship-content">
+            <span class="internship-date mono">2026.11 - Present</span>
+            <span class="internship-role">Research Collaborator</span>
+            <span class="internship-place">Ropedia, Singapore</span>
+          </span>
+        </li>
         <li class="internship-card">
           <span class="internship-logo" aria-hidden="true">
             <img class="pico-logo" src="images/pico.jpeg" alt="" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
